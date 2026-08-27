@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: Please cite this research release using the metadata below.
+title: 'Distinction, Perspective, and Predictive Closure: Source and Reproducibility
+  Repository'
+authors:
+- family-names: Singh
+  given-names: Abhijit
+version: 8.0.2
+date-released: 2026-08-27
+license: CC-BY-4.0
+preferred-citation:
+  type: generic
+  title: 'Distinction, Perspective, and Predictive Closure: Source and Reproducibility
+    Repository'
+  authors:
+  - family-names: Singh
+    given-names: Abhijit
+  year: 2026
+repository-code: https://github.com/mag-and-krotons/distinction-perspective-predictive-closure

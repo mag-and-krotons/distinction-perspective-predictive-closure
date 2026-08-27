@@ -1,0 +1,11 @@
+index,frequency_hz,terminal,sector,sigma_index,sigma_frequency_hz
+0,0,1,terminal,1,111
+1,111,1,terminal,0,0
+2,222,0,prime,9,999
+3,333,0,prime,8,888
+4,444,0,composite,7,777
+5,555,0,prime,6,666
+6,666,0,composite,5,555
+7,777,0,prime,4,444
+8,888,0,composite,3,333
+9,999,0,composite,2,222

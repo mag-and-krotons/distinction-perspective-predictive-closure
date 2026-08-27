@@ -1,0 +1,6 @@
+study,metric,baseline,enhanced,unit
+representation,exact whole object,92.96,97.78,percent
+context output,admitted coordinate,,99.768,percent
+context output,whole return,,98.52,percent
+air quality,coordinate accuracy,72.0836,74.7125,percent
+air quality,exact next vector,3.754,7.2492,percent

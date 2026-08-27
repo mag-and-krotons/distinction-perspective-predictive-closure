@@ -1,0 +1,154 @@
+\pdfoutput=1
+\documentclass[11pt,a4paper]{article}
+\usepackage{abhijit-research}
+\renewcommand{\PaperCode}{P15}
+\renewcommand{\PaperKind}{RESEARCH PAPER}
+\renewcommand{\PaperVersion}{VERSION 1.0}
+\renewcommand{\PaperDate}{AUGUST 2026}
+\renewcommand{\PaperTitle}{Reflexive Predictive Integration}
+\renewcommand{\PaperSubtitle}{A Testable Systems Model of Conscious Processing}
+\renewcommand{\PaperFullTitle}{Reflexive Predictive Integration: A Testable Systems Model of Conscious Processing}
+\renewcommand{\PaperShortTitle}{Reflexive Predictive Integration}
+\renewcommand{\PaperKeywords}{consciousness; predictive processing; self-model; causal integration; temporal continuity; intervention}
+\renewcommand{\PaperClassification}{The causal and predictive-state statements are formal. The link to subjective experience remains an empirical hypothesis requiring preregistered intervention and replication.}
+\renewcommand{\PaperCitation}{Singh, Abhijit. 2026. \textit{Reflexive Predictive Integration: A Testable Systems Model of Conscious Processing}. Research manuscript, version 1.0.}
+\begin{document}
+\MakeResearchTitle
+\MakeResearchContents
+\MakeResearchAbstract{%
+A causal systems model is developed in which memory, world prediction, self-modelling, action, and successor-state updating remain jointly integrated across a moving temporal window. A completed record cannot causally participate in producing the identical token episode in an acyclic model; complete self-description is therefore partial during the episode or available to a successor episode. Histories are grouped by intervention-conditioned future reports to define minimal predictive states. Quantitative observables are proposed for integration gain, reflexive use, temporal depth, counterfactual control, and boundary co-migration. A randomized source-versus-report intervention design, chronological validation protocol, blind comparator family, rival-theory test, and replication ladder are specified. The functional architecture is separated from the empirical claim that it is sufficient for subjective experience.
+}
+\section{Functional target}
+The paper models a continuing system with memory, world prediction, self-model, action, and feedback. It does not define subjective experience by stipulation. The empirical hypothesis is that a specific class of integrated, recurrent, self-indexed causal organization is necessary for conscious access and predicts intervention effects beyond report or motor preparation.
+
+Let
+\begin{equation}
+X_t=(M_t,W_t,S_t,P_t,A_t),
+\end{equation}
+where $M_t$ is retained memory, $W_t$ a world model, $S_t$ a self-model, $P_t$ a predictive distribution, and $A_t$ an action policy. Updates satisfy
+\begin{equation}
+X_{t+1}=F(X_t,Y_{t+1},I_{t+1}).
+\end{equation}
+Reflexive use means that variables in $S_t$ describing the system's own policy, confidence, or information limits alter later action.
+
+\section{Same-token causal obstruction}
+Let $H$ be an open macro-process and $dH$ its completed record. In an acyclic causal model, $dH$ cannot participate in producing the identical token closure that emits it. A usable complete record is therefore partial before closure or late, acting on a successor process. This does not prevent later complete self-description; it prevents a completed record from being one of its own causal antecedents.
+
+\section{Minimal predictive state}
+Define intervention-conditioned future equivalence of histories by
+\begin{equation}
+h\sim h'\iff
+P(Y_{t+1:\infty}\mid\operatorname{do}(a_{t:\infty}),h)
+=P(Y_{t+1:\infty}\mid\operatorname{do}(a_{t:\infty}),h')
+\end{equation}
+for every admitted intervention sequence. The equivalence class is the minimal predictive state. A reflexive state must additionally retain which current self-model distinctions change later action under intervention.
+
+\section{Candidate measurable coordinates}
+Define:
+\begin{align}
+\mathcal I_t&=\mathcal L_{\rm split}-\mathcal L_{\rm whole}, &&\text{integration gain},\\
+\mathcal R_t&=D(P_{\rm future}^{\rm intact},P_{\rm future}^{\rm self\text{-}model\ ablated}), &&\text{reflexive-use effect},\\
+\mathcal T_t&=\min\{k:\text{history depth }k\text{ reaches frozen risk}\}, &&\text{temporal depth},\\
+\mathcal C_t&=I(U_t;Y_{t+1:H}\mid S_t), &&\text{counterfactual control},\\
+\mathcal B_t&=D(S_t,S_{t+1}\mid\text{matched boundary perturbation}), &&\text{boundary co-migration}.
+\end{align}
+No one scalar is declared sufficient. The hypothesis concerns a pattern across causal integration, reflexive use, temporal depth, and boundary response.
+
+\section{Toy temporal-window result}
+In the source toy model, a temporal-window score rises from $0.209$ at window 1 to $0.234$ at window 5 and $0.239$ at window 15, while a naive all-level integration score changes from $0.242$ to $0.234$ to $0.230$. The result shows only that one fixed averaging rule can deteriorate when the window expands; it does not calibrate consciousness.
+
+\section{Randomized intervention design}
+Use a factorial design with source-side manipulation $I_S$ and report-side manipulation $I_R$. Source interventions alter perceptual evidence before category formation. Report interventions randomize report-key mapping and delay while leaving source evidence unchanged.
+
+The causal estimands include
+\begin{equation}
+\operatorname{ATE}_S=\mathbb E[Y\mid\operatorname{do}(I_S=1)]-\mathbb E[Y\mid\operatorname{do}(I_S=0)],
+\end{equation}
+plus interactions between source manipulation and a participant-generated distinction $Z$ defined on development trials.
+
+A valid $Z$ must:
+\begin{enumerate}
+\item improve held-out prediction beyond old task variables;
+\item transfer to a later independent decision or action;
+\item have a pre-report physiological signature not reducible to motor preparation.
+\end{enumerate}
+
+\section{Chronological split}
+Use development trials to discover $Z$, a re-entry/contact block to test whether $Z$ changes future behaviour, and an untouched final block for confirmatory analysis. Freeze the category definition, exclusions, physiological window, report delay, stopping rule, and statistical model before final data are opened.
+
+\section{Blind comparator family}
+Compare the proposed distinction against:
+\begin{enumerate}
+\item old task variables only;
+\item experimenter labels;
+\item reaction time and confidence;
+\item shuffled participant labels;
+\item balance- and complexity-matched random partitions;
+\item report-motor predictors;
+\item flexible post hoc models reported only as exploratory upper bounds.
+\end{enumerate}
+
+\section{Rival theories}
+After the measurement relation replicates, competing theories should submit incompatible preregistered predictions. Global-workspace models emphasize access-related broadcasting; higher-order models emphasize metarepresentational variables; recurrent-processing models emphasize local recurrent completion; integrated-information models require a separately committed system-level quantity. The present architecture succeeds only if its intervention pattern outperforms these committed alternatives on held-out data.
+
+\section{Physiological measurements}
+Candidate channels include electrophysiology, pupillometry, and autonomic signals. The primary window must precede overt report preparation. Multivariate decoding is trained only on development data. Report-key randomization prevents a fixed motor path from defining the effect.
+
+\section{Replication ladder and ethics}
+Promotion requires within-participant held-out success, a new-participant replication, and an outside-laboratory replication. A result that predicts report but not independent action or pre-report physiology is classified as a report model. Participant-generated categories may contain sensitive content; only the minimum necessary data should be stored, identifiers separated, and no individual diagnosis inferred.
+
+\section{Scope}
+The formal causal and predictive-state statements are exact in their declared models. The identification of the architecture with subjective experience is an empirical hypothesis. The current work does not prove that every implementation is conscious, that consciousness is substrate independent, or that the displayed coordinates are unique.
+
+
+\section{Formal causal architecture}
+Let
+\begin{equation}
+X_t=(M_t,W_t,S_t,P_t,A_t),
+\end{equation}
+where $M_t$ is retained memory, $W_t$ an external-world model, $S_t$ a self-model, $P_t$ a predictive distribution, and $A_t$ a policy. The transition
+\begin{equation}
+X_{t+1}=F(X_t,Y_{t+1},I_{t+1})
+\end{equation}
+is reflexive when variables in $S_t$ describing the system's own policy, confidence, and information boundary causally alter later prediction or action. This is a functional architecture, not a definition that proves phenomenal experience.
+
+\section{Five measurable coordinates}
+Candidate observables are
+\begin{align}
+\mathcal I_t&=\mathcal L_{\rm split}-\mathcal L_{\rm whole},&&\text{integration gain},\\
+\mathcal R_t&=D(P_{\rm future}^{\rm intact},P_{\rm future}^{\rm self\mbox{-}model\ ablated}),&&\text{reflexive-use effect},\\
+\mathcal T_t&=\min\{k:\text{history depth }k\text{ attains frozen risk}\},&&\text{temporal depth},\\
+\mathcal C_t&=I(U_t;Y_{t+1:H}\mid S_t),&&\text{counterfactual control},\\
+\mathcal B_t&=D(S_t,S_{t+1}\mid\text{matched boundary perturbation}),&&\text{boundary co-migration}.
+\end{align}
+No single coordinate is declared sufficient. The source toy calculation reports temporal-window scores $0.209$, $0.234$, and $0.239$ for windows 1, 5, and 15, while one naive integration average decreases across its tested settings. These values motivate a discriminating experiment; they are not biological measurements.
+
+\section{Generated distinction protocol}
+During a repeated perceptual task, each participant generates a distinction $Z$ not fixed by the experimenter's initial labels. $Z$ is formed on development trials, frozen, and evaluated on an untouched segment. A candidate is accepted only if it predicts an independent later action or report beyond old task variables and has a pre-report physiological correlate not reducible to motor preparation.
+
+\section{Randomized causal test}
+Use a factorial source intervention $I_S$ and report intervention $I_R$. $I_S$ changes perceptual evidence before category formation. $I_R$ randomizes report-key mapping and delay while leaving evidence unchanged. The primary estimand is
+\begin{equation}
+\operatorname{ATE}_S=
+\mathbb E[Y\mid\operatorname{do}(I_S=1)]-
+\mathbb E[Y\mid\operatorname{do}(I_S=0)],
+\end{equation}
+together with the interaction between $I_S$ and frozen $Z$. If the physiological signature follows report mapping rather than source manipulation, the proposed pre-report route is rejected.
+
+\section{Comparator and rival-theory matrix}
+The frozen distinction must beat old task variables, experimenter labels, reaction time, confidence, shuffled labels, complexity-matched random partitions, and motor predictors. After the measurement relation replicates, competing theories must commit to incompatible predictions: broadcasting and access for global-workspace models; metarepresentational dependence for higher-order models; local recurrent completion for recurrent-processing models; and a separately fixed system quantity for integrated-information approaches.
+
+\section{Physiology, replication, and ethics}
+Candidate channels include electrophysiology, pupillometry, and autonomic signals in a preregistered interval preceding overt response. Report-key randomization prevents fixed motor decoding. Promotion requires within-participant held-out success, new-participant replication, and outside-laboratory replication. Participant-generated distinctions may be sensitive; retain minimum data, separate identities, and prohibit individual diagnosis from exploratory scores.
+
+\section{Falsification boundary}
+A result that predicts only the overt report is a report model. A result that disappears after motor and confidence controls does not support reflexive integration. A result that fails source-side intervention or cross-person replication is rejected. Even a successful causal marker would establish a processing relation, not a universal criterion of moral status or experience.
+
+\begin{thebibliography}{99}
+\bibitem{dehaene} S. Dehaene and L. Naccache, Towards a cognitive neuroscience of consciousness, Cognition 79 (2001), 1--37.
+\bibitem{lamme} V. A. F. Lamme, Towards a true neural stance on consciousness, Trends in Cognitive Sciences 10 (2006), 494--501.
+\bibitem{seth} A. K. Seth and T. Bayne, Theories of consciousness, Nature Reviews Neuroscience 23 (2022), 439--452.
+\bibitem{friston} K. Friston, The free-energy principle: a unified brain theory?, Nature Reviews Neuroscience 11 (2010), 127--138.
+\bibitem{tononi} G. Tononi et al., Integrated information theory: from consciousness to its physical substrate, Nature Reviews Neuroscience 17 (2016), 450--461.
+\end{thebibliography}
+\end{document}

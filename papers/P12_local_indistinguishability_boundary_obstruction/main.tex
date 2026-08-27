@@ -1,0 +1,161 @@
+\pdfoutput=1
+\documentclass[11pt,a4paper]{article}
+\usepackage{abhijit-research}
+\renewcommand{\PaperCode}{P12}
+\renewcommand{\PaperKind}{RESEARCH PAPER}
+\renewcommand{\PaperVersion}{VERSION 1.0}
+\renewcommand{\PaperDate}{AUGUST 2026}
+\renewcommand{\PaperTitle}{Local Indistinguishability}
+\renewcommand{\PaperSubtitle}{Global Obstruction and Minimal Predictive Memory}
+\renewcommand{\PaperFullTitle}{Local Indistinguishability, Global Obstruction, and Minimal Predictive Memory}
+\renewcommand{\PaperShortTitle}{Local Indistinguishability}
+\renewcommand{\PaperKeywords}{local indistinguishability; topological order; predictive memory; factorization; bond dimension; obstruction}
+\renewcommand{\PaperClassification}{The factorization theorem, coordinate count, and classical predictive-memory statements are exact. Topological analogies, quantization, stability, and the proposed invariant remain separate open questions.}
+\renewcommand{\PaperCitation}{Singh, Abhijit. 2026. \textit{Local Indistinguishability, Global Obstruction, and Minimal Predictive Memory}. Research manuscript, version 1.0.}
+\begin{document}
+\MakeResearchTitle
+\MakeResearchContents
+\MakeResearchAbstract{%
+A precise reporter-boundary theorem is developed: a global label fails to factor through a family of local reporters exactly when there exist locally indistinguishable but globally distinguishable configurations. This biconditional directly realizes the defining local/global structure of topological order. The result is separated from a broader analogy between self-reference obstruction and nontrivial bundles, because the latter currently lacks quantization and deformation stability. Classical future-equivalence classes give deterministic predictive-memory lower bounds, while nonorthogonal quantum memory can compress the same process. Marginals of a bipartite state omit a calculable number of joint-correlation coordinates, so compatible marginals do not determine the operative relation. A graded dictionary distinguishes exact, structural, and heuristic transfers and identifies the construction of a deformation-stable reflexive invariant as the principal open problem.
+}
+\section{Reporter boundary}
+Let $\Sigma$ be a set of configurations, $J:\Sigma\to O$ a global label, and $K_1,\ldots,K_n$ local reporters. Write $K_{[n]}=(K_1,\ldots,K_n)$ and define
+\begin{equation}
+\partial_J(K_1,\ldots,K_n)=
+\{(s,t):K_i(s)=K_i(t)\ \forall i,\ J(s)\ne J(t)\}.
+\end{equation}
+
+\begin{theorem}[Factorization biconditional]
+\begin{equation}
+\partial_J(K_1,\ldots,K_n)=\varnothing
+\quad\Longleftrightarrow\quad
+\exists f\; J=f\circ K_{[n]}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+A factorization makes $J$ constant on every $K_{[n]}$-fibre. Conversely, if the boundary is empty, define $f$ on each image fibre by the common value of $J$.
+\end{proof}
+The exact obstruction is therefore the conjunction of local indistinguishability and global distinguishability.
+
+\section{Topological-order specialization}
+For a degenerate ground-state subspace, local indistinguishability is expressed by
+\begin{equation}
+\langle\psi_i|O_{\rm local}|\psi_j\rangle=c(O)\delta_{ij}.
+\end{equation}
+Nonlocal loop or logical operators can separate the states. Taking the local expectation-value reporters and a global topological label realizes the reporter-boundary theorem directly.
+
+This exact use must be separated from a looser analogy between diagonal self-reference obstruction and a nontrivial Bloch bundle. A Chern obstruction is an integer cohomology class stable under gap-preserving deformation. The current reflexive obstruction is only the presence of a fixed-point-free twist; it has no proved quantization or deformation stability. Topological theorems cannot be imported solely because both problems involve failure of a global section.
+
+\section{Trivial regime}
+When the relevant obstruction vanishes, a global representation exists. In band theory, under the standard hypotheses, a smooth frame and exponentially localized Wannier basis exist. In the reflexive calculus, the fixed-point regime removes the diagonal contradiction. The shared statement is existence of a global section after the obstruction vanishes; physical consequences remain domain specific.
+
+\section{Minimal predictive memory}
+For a classical stochastic process, causal states are equivalence classes of histories with the same future distribution. Their number is the minimal number of deterministic predictive states. Hidden-state and matrix-product representations require sufficient bond dimension to carry these future-distinguishable conditions.
+
+Quantum models can encode the same classical process in nonorthogonal memory states and can require smaller Hilbert-space dimension than the number of classical causal states. The exact transfer is therefore:
+\begin{itemize}
+\item classical future equivalence gives a deterministic state-count lower bound;
+\item quantum compression can be smaller when nonorthogonal memory states reproduce the future statistics without being perfectly distinguishable.
+\end{itemize}
+
+\section{Joint-state information omitted by marginals}
+For a bipartite $d_G\times d_Q$ Hermitian joint state, the two normalized marginals omit
+\begin{equation}
+(d_G^2-1)(d_Q^2-1)
+\end{equation}
+real cross-correlation coordinates. In a $3\times3$ comparison, 64 joint coordinates are absent. Equal or compatible marginals therefore do not reconstruct the operative relation between them.
+
+\section{Obstruction dictionary and grading}
+The cross-field dictionary is divided into exact, structural, and heuristic entries.
+\begin{longtable}{p{.31\linewidth}p{.35\linewidth}p{.19\linewidth}}
+\toprule
+predictive/reflexive object & quantum-materials object & status\\\midrule
+reporter boundary & local indistinguishability plus global distinction & exact\\
+minimal deterministic predictive states & classical memory/bond lower bound & exact\\
+fixed-point regime & trivial global-section regime & exact at factorization level\\
+diagonal residual & failure of global section & structural\\
+returned-boundary tower & anomaly inflow hierarchy & structural\\
+typed recurrence depth & renormalization scale & heuristic\\
+record cost & driven-system dissipation & structural; conditional\\
+\bottomrule
+\end{longtable}
+
+\section{Open reflexive invariant}
+A topological obstruction is useful because it is graded and stable. The reflexive obstruction currently lacks both properties.
+\begin{conjecture}[Reflexive invariant programme]
+There exists a deformation-stable quantity $\mathcal X(m)$ on a suitably topologized space of self-models that vanishes in the fixed-point regime and grades the residual obstruction otherwise.
+\end{conjecture}
+Candidate constructions include a stabilized residual-tower index, an enriched categorical index, or a cohomological lifting obstruction. The conjecture may fail; a no-go theorem would be equally informative.
+
+\section{Physical tests}
+A genuine joint-obstruction claim requires an observable unavailable to every declared local reporter but available to a specified global operation, together with robustness under a declared deformation class. Recommended controls are local tomography, nonlocal loop operators, boundary-mode counting, disorder or perturbation tests, ablation of the global relation, and restoration. Post hoc factorization of two marginals is not such a test.
+
+\section{Scope}
+The factorization biconditional, joint-coordinate count, and classical predictive-state lower bound are exact. The topological dictionary is not uniformly exact. Quantization, stability, bulk-boundary exactness, and the proposed reflexive invariant remain open.
+
+
+\section{Graded translation dictionary}
+The comparison with quantum materials is intentionally graded. The entries are summarized below.
+\begin{longtable}{p{.31\linewidth}p{.37\linewidth}>{\raggedright\arraybackslash}p{.19\linewidth}}
+\toprule
+reporter/representation concept&quantum-materials concept&status\\\midrule
+self-model over a state carrier&choice of global smooth frame&structural\\
+fixed-point-free twist&nontrivial holonomy&structural\\
+diagonal residual&obstruction to global section&structural\\
+fixed-point/eigenform regime&topologically trivial phase&exact at the stated existence level\\
+nonfactorization of local reports&local indistinguishability plus global distinction&exact\\
+minimal classical future classes&deterministic bond-dimension lower bound&exact\\
+returned-boundary tower&anomaly-inflow hierarchy&structural; conjectural\\
+typed recurrence depth&renormalization scale&heuristic\\
+dissipation ledger&driven-system heating&structural\\
+formation-weight algebra&effective operator algebra&heuristic\\
+\bottomrule
+\end{longtable}
+A structural entry transfers a question, not a theorem.
+
+\section{Exact reporter-boundary theorem}
+For reporters $K_i:\Sigma\to Z_i$ and target label $J:\Sigma\to O$, define
+\begin{equation}
+\partial_J(K_1,\ldots,K_n)=
+\{(s,t):K_i(s)=K_i(t)\ \forall i,\ J(s)\ne J(t)\}.
+\end{equation}
+Then
+\begin{equation}
+\partial_J=\varnothing
+\quad\Longleftrightarrow\quad
+J=f\circ(K_1,\ldots,K_n)
+\end{equation}
+for some $f$. The forward direction defines $f$ on every joint-reporter fibre, on which $J$ is constant; the reverse direction is immediate. A nonempty boundary is therefore exactly local indistinguishability together with global distinguishability.
+
+In a topologically ordered ground-space, local operators satisfy
+\begin{equation}
+\langle\psi_i|O_{\rm local}|\psi_j\rangle=c(O)\delta_{ij},
+\end{equation}
+while nonlocal loop operators separate the states. This is a direct realization of the biconditional.
+
+\section{Trivial regime and obstruction limits}
+When the relevant obstruction vanishes, a global section exists. In band theory this corresponds, under the usual hypotheses, to a smooth frame and localized Wannier representation. In the self-model calculus the fixed-point regime removes the diagonal contradiction. The analogy stops there unless a deformation-stable invariant is constructed.
+
+The topological obstruction is quantized and stable under gap-preserving deformation. The current reflexive obstruction is only Boolean under the supplied fixed-point-free twist. It has no proved integer index and no specified topology on the space of self-models. Consequently Chern-number, bulk-boundary, and anomaly-inflow theorems cannot be imported as proofs.
+
+\section{Memory and bond dimension}
+For a classical stochastic process, histories with the same future distribution form causal states. Their number is the minimal number of deterministic predictive states. A hidden-state or tensor-network realization must carry enough dimension to distinguish those future conditions. Quantum models can sometimes encode the same classical process in nonorthogonal memory states and use a smaller Hilbert-space dimension. The exact transfer is therefore a classical lower bound plus a possible quantum compression, not equality in every model.
+
+\section{Joint information missed by marginals}
+A normalized Hermitian joint state on $d_G\times d_Q$ has $(d_Gd_Q)^2-1$ real coordinates. Its two normalized marginals provide only $(d_G^2-1)+(d_Q^2-1)$. The omitted cross-relation space has dimension
+\begin{equation}
+(d_G^2-1)(d_Q^2-1).
+\end{equation}
+For a $3\times3$ comparison, 64 real joint coordinates are absent. Compatible marginals therefore do not reconstruct the operative relation.
+
+\section{Open problems and tests}
+A serious topological extension must define a topology or deformation class on self-models, construct an invariant that vanishes in the fixed-point regime, prove stability, and derive a boundary observable. Physical tests should compare local tomography with a specified nonlocal operation, perform perturbation and disorder tests, and use ablation/restoration of the global relation. Post hoc factorization of two marginals does not meet this standard.
+
+\begin{thebibliography}{99}
+\bibitem{wen} X.-G. Wen, Topological orders in rigid states, International Journal of Modern Physics B 4 (1990), 239--271.
+\bibitem{kitaev} A. Kitaev, Fault-tolerant quantum computation by anyons, Annals of Physics 303 (2003), 2--30.
+\bibitem{marzari} N. Marzari et al., Maximally localized Wannier functions: theory and applications, Reviews of Modern Physics 84 (2012), 1419--1475.
+\bibitem{crutchfield} J. P. Crutchfield and K. Young, Inferring statistical complexity, Physical Review Letters 63 (1989), 105--108.
+\bibitem{gu} M. Gu et al., Quantum mechanics can reduce the complexity of classical models, Nature Communications 3 (2012), 762.
+\end{thebibliography}
+\end{document}

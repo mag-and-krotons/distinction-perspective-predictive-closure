@@ -1,0 +1,633 @@
+{
+  "arities": [
+    {
+      "arity_P1_coordinate": 1,
+      "event_layers": [
+        {
+          "coefficient_count": 1,
+          "events_P1_coordinate": 1,
+          "maximum_presented_resultants": 1,
+          "minimum_presented_resultants": 1,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1
+        },
+        {
+          "coefficient_count": 2,
+          "events_P1_coordinate": 2,
+          "maximum_presented_resultants": 2,
+          "minimum_presented_resultants": 1,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 2
+        },
+        {
+          "coefficient_count": 3,
+          "events_P1_coordinate": 3,
+          "maximum_presented_resultants": 3,
+          "minimum_presented_resultants": 1,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 5
+        },
+        {
+          "coefficient_count": 4,
+          "events_P1_coordinate": 4,
+          "maximum_presented_resultants": 4,
+          "minimum_presented_resultants": 1,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 15
+        },
+        {
+          "coefficient_count": 5,
+          "events_P1_coordinate": 5,
+          "maximum_presented_resultants": 5,
+          "minimum_presented_resultants": 1,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 52
+        },
+        {
+          "coefficient_count": 6,
+          "events_P1_coordinate": 6,
+          "maximum_presented_resultants": 6,
+          "minimum_presented_resultants": 1,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 203
+        },
+        {
+          "coefficient_count": 7,
+          "events_P1_coordinate": 7,
+          "maximum_presented_resultants": 7,
+          "minimum_presented_resultants": 1,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 877
+        },
+        {
+          "coefficient_count": 8,
+          "events_P1_coordinate": 8,
+          "maximum_presented_resultants": 8,
+          "minimum_presented_resultants": 1,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 4140
+        }
+      ],
+      "kernel_coefficients_descending": [
+        1,
+        1
+      ],
+      "kernel_strictly_left_half_plane": true,
+      "third_kernel_Hurwitz_determinant": null
+    },
+    {
+      "arity_P1_coordinate": 2,
+      "event_layers": [
+        {
+          "coefficient_count": 1,
+          "events_P1_coordinate": 1,
+          "maximum_presented_resultants": 2,
+          "minimum_presented_resultants": 2,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1
+        },
+        {
+          "coefficient_count": 3,
+          "events_P1_coordinate": 2,
+          "maximum_presented_resultants": 4,
+          "minimum_presented_resultants": 2,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 4
+        },
+        {
+          "coefficient_count": 5,
+          "events_P1_coordinate": 3,
+          "maximum_presented_resultants": 6,
+          "minimum_presented_resultants": 2,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 29
+        },
+        {
+          "coefficient_count": 7,
+          "events_P1_coordinate": 4,
+          "maximum_presented_resultants": 8,
+          "minimum_presented_resultants": 2,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 321
+        },
+        {
+          "coefficient_count": 9,
+          "events_P1_coordinate": 5,
+          "maximum_presented_resultants": 10,
+          "minimum_presented_resultants": 2,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 4900
+        },
+        {
+          "coefficient_count": 11,
+          "events_P1_coordinate": 6,
+          "maximum_presented_resultants": 12,
+          "minimum_presented_resultants": 2,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 97191
+        },
+        {
+          "coefficient_count": 13,
+          "events_P1_coordinate": 7,
+          "maximum_presented_resultants": 14,
+          "minimum_presented_resultants": 2,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 2406417
+        },
+        {
+          "coefficient_count": 15,
+          "events_P1_coordinate": 8,
+          "maximum_presented_resultants": 16,
+          "minimum_presented_resultants": 2,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 72237562
+        }
+      ],
+      "kernel_coefficients_descending": [
+        1,
+        2,
+        2
+      ],
+      "kernel_strictly_left_half_plane": true,
+      "third_kernel_Hurwitz_determinant": null
+    },
+    {
+      "arity_P1_coordinate": 3,
+      "event_layers": [
+        {
+          "coefficient_count": 1,
+          "events_P1_coordinate": 1,
+          "maximum_presented_resultants": 3,
+          "minimum_presented_resultants": 3,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1
+        },
+        {
+          "coefficient_count": 4,
+          "events_P1_coordinate": 2,
+          "maximum_presented_resultants": 6,
+          "minimum_presented_resultants": 3,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 8
+        },
+        {
+          "coefficient_count": 7,
+          "events_P1_coordinate": 3,
+          "maximum_presented_resultants": 9,
+          "minimum_presented_resultants": 3,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 173
+        },
+        {
+          "coefficient_count": 10,
+          "events_P1_coordinate": 4,
+          "maximum_presented_resultants": 12,
+          "minimum_presented_resultants": 3,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 7284
+        },
+        {
+          "coefficient_count": 13,
+          "events_P1_coordinate": 5,
+          "maximum_presented_resultants": 15,
+          "minimum_presented_resultants": 3,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 507622
+        },
+        {
+          "coefficient_count": 16,
+          "events_P1_coordinate": 6,
+          "maximum_presented_resultants": 18,
+          "minimum_presented_resultants": 3,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 53272958
+        },
+        {
+          "coefficient_count": 19,
+          "events_P1_coordinate": 7,
+          "maximum_presented_resultants": 21,
+          "minimum_presented_resultants": 3,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 7897749769
+        },
+        {
+          "coefficient_count": 22,
+          "events_P1_coordinate": 8,
+          "maximum_presented_resultants": 24,
+          "minimum_presented_resultants": 3,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1579175298573
+        }
+      ],
+      "kernel_coefficients_descending": [
+        1,
+        3,
+        6,
+        6
+      ],
+      "kernel_strictly_left_half_plane": true,
+      "third_kernel_Hurwitz_determinant": null
+    },
+    {
+      "arity_P1_coordinate": 4,
+      "event_layers": [
+        {
+          "coefficient_count": 1,
+          "events_P1_coordinate": 1,
+          "maximum_presented_resultants": 4,
+          "minimum_presented_resultants": 4,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1
+        },
+        {
+          "coefficient_count": 5,
+          "events_P1_coordinate": 2,
+          "maximum_presented_resultants": 8,
+          "minimum_presented_resultants": 4,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 16
+        },
+        {
+          "coefficient_count": 9,
+          "events_P1_coordinate": 3,
+          "maximum_presented_resultants": 12,
+          "minimum_presented_resultants": 4,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1041
+        },
+        {
+          "coefficient_count": 13,
+          "events_P1_coordinate": 4,
+          "maximum_presented_resultants": 16,
+          "minimum_presented_resultants": 4,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 168481
+        },
+        {
+          "coefficient_count": 17,
+          "events_P1_coordinate": 5,
+          "maximum_presented_resultants": 20,
+          "minimum_presented_resultants": 4,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 54344712
+        },
+        {
+          "coefficient_count": 21,
+          "events_P1_coordinate": 6,
+          "maximum_presented_resultants": 24,
+          "minimum_presented_resultants": 4,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 30663168463
+        },
+        {
+          "coefficient_count": 25,
+          "events_P1_coordinate": 7,
+          "maximum_presented_resultants": 28,
+          "minimum_presented_resultants": 4,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 27702616487429
+        },
+        {
+          "coefficient_count": 29,
+          "events_P1_coordinate": 8,
+          "maximum_presented_resultants": 32,
+          "minimum_presented_resultants": 4,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 37598860811504850
+        }
+      ],
+      "kernel_coefficients_descending": [
+        1,
+        4,
+        12,
+        24,
+        24
+      ],
+      "kernel_strictly_left_half_plane": true,
+      "third_kernel_Hurwitz_determinant": 192
+    },
+    {
+      "arity_P1_coordinate": 5,
+      "event_layers": [
+        {
+          "coefficient_count": 1,
+          "events_P1_coordinate": 1,
+          "maximum_presented_resultants": 5,
+          "minimum_presented_resultants": 5,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1
+        },
+        {
+          "coefficient_count": 6,
+          "events_P1_coordinate": 2,
+          "maximum_presented_resultants": 10,
+          "minimum_presented_resultants": 5,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 32
+        },
+        {
+          "coefficient_count": 11,
+          "events_P1_coordinate": 3,
+          "maximum_presented_resultants": 15,
+          "minimum_presented_resultants": 5,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 6285
+        },
+        {
+          "coefficient_count": 16,
+          "events_P1_coordinate": 4,
+          "maximum_presented_resultants": 20,
+          "minimum_presented_resultants": 5,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 3929310
+        },
+        {
+          "coefficient_count": 21,
+          "events_P1_coordinate": 5,
+          "maximum_presented_resultants": 25,
+          "minimum_presented_resultants": 5,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 5909129867
+        },
+        {
+          "coefficient_count": 26,
+          "events_P1_coordinate": 6,
+          "maximum_presented_resultants": 30,
+          "minimum_presented_resultants": 5,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 18082325320608
+        },
+        {
+          "coefficient_count": 31,
+          "events_P1_coordinate": 7,
+          "maximum_presented_resultants": 35,
+          "minimum_presented_resultants": 5,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 100514724959764322
+        },
+        {
+          "coefficient_count": 36,
+          "events_P1_coordinate": 8,
+          "maximum_presented_resultants": 40,
+          "minimum_presented_resultants": 5,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 935569929478952581115
+        }
+      ],
+      "kernel_coefficients_descending": [
+        1,
+        5,
+        20,
+        60,
+        120,
+        120
+      ],
+      "kernel_strictly_left_half_plane": false,
+      "third_kernel_Hurwitz_determinant": -600
+    },
+    {
+      "arity_P1_coordinate": 6,
+      "event_layers": [
+        {
+          "coefficient_count": 1,
+          "events_P1_coordinate": 1,
+          "maximum_presented_resultants": 6,
+          "minimum_presented_resultants": 6,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1
+        },
+        {
+          "coefficient_count": 7,
+          "events_P1_coordinate": 2,
+          "maximum_presented_resultants": 12,
+          "minimum_presented_resultants": 6,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 64
+        },
+        {
+          "coefficient_count": 13,
+          "events_P1_coordinate": 3,
+          "maximum_presented_resultants": 18,
+          "minimum_presented_resultants": 6,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 37997
+        },
+        {
+          "coefficient_count": 19,
+          "events_P1_coordinate": 4,
+          "maximum_presented_resultants": 24,
+          "minimum_presented_resultants": 6,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 92022204
+        },
+        {
+          "coefficient_count": 25,
+          "events_P1_coordinate": 5,
+          "maximum_presented_resultants": 30,
+          "minimum_presented_resultants": 6,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 648240608506
+        },
+        {
+          "coefficient_count": 31,
+          "events_P1_coordinate": 6,
+          "maximum_presented_resultants": 36,
+          "minimum_presented_resultants": 6,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 10817916920997474
+        },
+        {
+          "coefficient_count": 37,
+          "events_P1_coordinate": 7,
+          "maximum_presented_resultants": 42,
+          "minimum_presented_resultants": 6,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 372239611231244389257
+        },
+        {
+          "coefficient_count": 43,
+          "events_P1_coordinate": 8,
+          "maximum_presented_resultants": 48,
+          "minimum_presented_resultants": 6,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 23915862947700196641770857
+        }
+      ],
+      "kernel_coefficients_descending": [
+        1,
+        6,
+        30,
+        120,
+        360,
+        720,
+        720
+      ],
+      "kernel_strictly_left_half_plane": false,
+      "third_kernel_Hurwitz_determinant": -5760
+    },
+    {
+      "arity_P1_coordinate": 7,
+      "event_layers": [
+        {
+          "coefficient_count": 1,
+          "events_P1_coordinate": 1,
+          "maximum_presented_resultants": 7,
+          "minimum_presented_resultants": 7,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1
+        },
+        {
+          "coefficient_count": 8,
+          "events_P1_coordinate": 2,
+          "maximum_presented_resultants": 14,
+          "minimum_presented_resultants": 7,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 128
+        },
+        {
+          "coefficient_count": 15,
+          "events_P1_coordinate": 3,
+          "maximum_presented_resultants": 21,
+          "minimum_presented_resultants": 7,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 229829
+        },
+        {
+          "coefficient_count": 22,
+          "events_P1_coordinate": 4,
+          "maximum_presented_resultants": 28,
+          "minimum_presented_resultants": 7,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 2160215478
+        },
+        {
+          "coefficient_count": 29,
+          "events_P1_coordinate": 5,
+          "maximum_presented_resultants": 35,
+          "minimum_presented_resultants": 7,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 71522235726882
+        },
+        {
+          "coefficient_count": 36,
+          "events_P1_coordinate": 6,
+          "maximum_presented_resultants": 42,
+          "minimum_presented_resultants": 7,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 6534270809740683086
+        },
+        {
+          "coefficient_count": 43,
+          "events_P1_coordinate": 7,
+          "maximum_presented_resultants": 49,
+          "minimum_presented_resultants": 7,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1397642418427857296925673
+        },
+        {
+          "coefficient_count": 50,
+          "events_P1_coordinate": 8,
+          "maximum_presented_resultants": 56,
+          "minimum_presented_resultants": 7,
+          "nonzero_zero_set_strictly_left_half_plane": false,
+          "retained_raw_histories": 622632370474717572753510352832
+        }
+      ],
+      "kernel_coefficients_descending": [
+        1,
+        7,
+        42,
+        210,
+        840,
+        2520,
+        5040,
+        5040
+      ],
+      "kernel_strictly_left_half_plane": false,
+      "third_kernel_Hurwitz_determinant": -23520
+    },
+    {
+      "arity_P1_coordinate": 8,
+      "event_layers": [
+        {
+          "coefficient_count": 1,
+          "events_P1_coordinate": 1,
+          "maximum_presented_resultants": 8,
+          "minimum_presented_resultants": 8,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1
+        },
+        {
+          "coefficient_count": 9,
+          "events_P1_coordinate": 2,
+          "maximum_presented_resultants": 16,
+          "minimum_presented_resultants": 8,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 256
+        },
+        {
+          "coefficient_count": 17,
+          "events_P1_coordinate": 3,
+          "maximum_presented_resultants": 24,
+          "minimum_presented_resultants": 8,
+          "nonzero_zero_set_strictly_left_half_plane": true,
+          "retained_raw_histories": 1390241
+        },
+        {
+          "coefficient_count": 25,
+          "events_P1_coordinate": 4,
+          "maximum_presented_resultants": 32,
+          "minimum_presented_resultants": 8,
+          "nonzero_zero_set_strictly_left_half_plane": false,
+          "retained_raw_histories": 50786270529
+        },
+        {
+          "coefficient_count": 33,
+          "events_P1_coordinate": 5,
+          "maximum_presented_resultants": 40,
+          "minimum_presented_resultants": 8,
+          "nonzero_zero_set_strictly_left_half_plane": false,
+          "retained_raw_histories": 7923450460657720
+        },
+        {
+          "coefficient_count": 41,
+          "events_P1_coordinate": 6,
+          "maximum_presented_resultants": 48,
+          "minimum_presented_resultants": 8,
+          "nonzero_zero_set_strictly_left_half_plane": false,
+          "retained_raw_histories": 3974140670977615977855
+        },
+        {
+          "coefficient_count": 49,
+          "events_P1_coordinate": 7,
+          "maximum_presented_resultants": 56,
+          "minimum_presented_resultants": 8,
+          "nonzero_zero_set_strictly_left_half_plane": false,
+          "retained_raw_histories": 5300209832031536540705071413
+        },
+        {
+          "coefficient_count": 57,
+          "events_P1_coordinate": 8,
+          "maximum_presented_resultants": 64,
+          "minimum_presented_resultants": 8,
+          "nonzero_zero_set_strictly_left_half_plane": false,
+          "retained_raw_histories": 16426359455159592270345636321161074
+        }
+      ],
+      "kernel_coefficients_descending": [
+        1,
+        8,
+        56,
+        336,
+        1680,
+        6720,
+        20160,
+        40320,
+        40320
+      ],
+      "kernel_strictly_left_half_plane": false,
+      "third_kernel_Hurwitz_determinant": -69888
+    }
+  ],
+  "status": "P1 audit of complete atomic-interaction closure; generated before any arithmetic or RH comparison"
+}

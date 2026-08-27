@@ -1,0 +1,100 @@
+{
+  "arities": [
+    {
+      "all_states_occur_in_some_history": true,
+      "arity_P1_coordinate": 2,
+      "binary_P1_evaluation_at_t_2": 1,
+      "characteristic_coefficients_by_exponent": {
+        "0": -1,
+        "1": 1
+      },
+      "characteristic_matches_source_recurrence": true,
+      "common_states_are_only_endpoints": true,
+      "expected_history_count": 1,
+      "expected_top_inversion_weight": -1,
+      "maximal_binary_refinement_histories": 1,
+      "partial_distinguishability_states": 2,
+      "states_common_to_every_history": 2,
+      "top_inversion_weight": -1
+    },
+    {
+      "all_states_occur_in_some_history": true,
+      "arity_P1_coordinate": 3,
+      "binary_P1_evaluation_at_t_2": 0,
+      "characteristic_coefficients_by_exponent": {
+        "0": 2,
+        "1": -3,
+        "2": 1
+      },
+      "characteristic_matches_source_recurrence": true,
+      "common_states_are_only_endpoints": true,
+      "expected_history_count": 3,
+      "expected_top_inversion_weight": 2,
+      "maximal_binary_refinement_histories": 3,
+      "partial_distinguishability_states": 5,
+      "states_common_to_every_history": 2,
+      "top_inversion_weight": 2
+    },
+    {
+      "all_states_occur_in_some_history": true,
+      "arity_P1_coordinate": 4,
+      "binary_P1_evaluation_at_t_2": -2,
+      "characteristic_coefficients_by_exponent": {
+        "0": -6,
+        "1": 12,
+        "2": -7,
+        "3": 1
+      },
+      "characteristic_matches_source_recurrence": true,
+      "common_states_are_only_endpoints": true,
+      "expected_history_count": 18,
+      "expected_top_inversion_weight": -6,
+      "maximal_binary_refinement_histories": 18,
+      "partial_distinguishability_states": 15,
+      "states_common_to_every_history": 2,
+      "top_inversion_weight": -6
+    },
+    {
+      "all_states_occur_in_some_history": true,
+      "arity_P1_coordinate": 5,
+      "binary_P1_evaluation_at_t_2": 0,
+      "characteristic_coefficients_by_exponent": {
+        "0": 24,
+        "1": -60,
+        "2": 50,
+        "3": -15,
+        "4": 1
+      },
+      "characteristic_matches_source_recurrence": true,
+      "common_states_are_only_endpoints": true,
+      "expected_history_count": 180,
+      "expected_top_inversion_weight": 24,
+      "maximal_binary_refinement_histories": 180,
+      "partial_distinguishability_states": 52,
+      "states_common_to_every_history": 2,
+      "top_inversion_weight": 24
+    },
+    {
+      "all_states_occur_in_some_history": true,
+      "arity_P1_coordinate": 6,
+      "binary_P1_evaluation_at_t_2": 16,
+      "characteristic_coefficients_by_exponent": {
+        "0": -120,
+        "1": 360,
+        "2": -390,
+        "3": 180,
+        "4": -31,
+        "5": 1
+      },
+      "characteristic_matches_source_recurrence": true,
+      "common_states_are_only_endpoints": true,
+      "expected_history_count": 2700,
+      "expected_top_inversion_weight": -120,
+      "maximal_binary_refinement_histories": 2700,
+      "partial_distinguishability_states": 203,
+      "states_common_to_every_history": 2,
+      "top_inversion_weight": -120
+    }
+  ],
+  "status": "P1 audit of the complete refinement shadow; generated before arithmetic or RH comparison"
+}

@@ -1,0 +1,23 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "A frozen source-derived arithmetic construction is connected to the classical Riemann problem through exact finite and infinite statements. Scalarization of the uncollapsed response algebra fails only through repeated-prime and over-capacity interactions; differentiation gives an exact boundary-current reconstruction. A weighted Mertens capacity energy A_N is introduced and proved to satisfy A_N/N → ∞ and N/A_N → 0. The power-growth exponent of the excess provides a critical coordinate. After classical identification, zero transverse escape, local-uniform Mobius control, completed-incidence positivity, and subpower capacity excess are proved equivalent to the Riemann Hypothesis in the displayed normalizations. The equivalence theorem is stated boldly and separately from the still-unproved universal estimate required to settle the conjecture. The static five-class Möbius reporter is proved to be a false closure under prime multiplication; the all-scale predictive quotient is the prime-support address plus one absorbing repeated state.",
+  "keywords": [
+    "Riemann Hypothesis",
+    "Mobius function",
+    "Mertens function",
+    "capacity energy",
+    "operator inequality",
+    "critical exponent"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-08-27",
+  "related_identifiers": [],
+  "resource_type": "publication-article",
+  "title": "Critical Capacity Completion and Equivalent Forms of the Riemann Hypothesis",
+  "version": "1.1.0"
+}

@@ -1,0 +1,8 @@
+quantity,value,unit,status
+n4_seed_entropy,1.6009,bits,exact protocol
+n4_steady_entropy,1.0,bits/use,exact protocol
+kcbs_no_threshold,0.8396425434,probability,exact feedback family
+kcbs_min_cost,0.503785526,events/use,exact feedback family
+instrument_entropy_rate,1.8413629168,bits/use,processed matrix
+instrument_predictive_information,0.1580957201,bits,processed matrix
+instrument_spectral_radius,0.35301358,per use,processed matrix

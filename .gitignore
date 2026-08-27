@@ -1,0 +1,16 @@
+# LaTeX build products
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.bbl
+*.blg
+_latex_build/
+_renders/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

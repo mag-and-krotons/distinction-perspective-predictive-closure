@@ -1,0 +1,6 @@
+PDF: /mnt/data/Abhijit_Singh_Zenodo_Git_Release_v8_0/papers/P07_capacity_complexes_operator_criticality/main.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

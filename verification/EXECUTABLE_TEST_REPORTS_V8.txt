@@ -1,0 +1,24 @@
+## Prime-observer verifier
+{
+  "absolute_111_hz_constant_claimed": false,
+  "commuting_return_generators": 4,
+  "decomposition": [
+    8,
+    4,
+    24
+  ],
+  "fourier_magnitude_match": true,
+  "physical_quantum_number_claimed": false,
+  "prime_return_sectors": [
+    2,
+    3,
+    5,
+    7
+  ],
+  "relations": 36,
+  "states": 9,
+  "static_five_class_false_closure": true,
+  "status": "PASS"
+}
+## State-transfer tests
+## Representation-genesis benchmark tests

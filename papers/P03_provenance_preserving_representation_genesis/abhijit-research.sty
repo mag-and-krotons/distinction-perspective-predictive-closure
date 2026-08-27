@@ -1,0 +1,185 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{abhijit-research}[2026/08/27 Uniform academic research series]
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{newtxtext}
+\RequirePackage{amsmath,amssymb,amsthm,mathtools,bm,stmaryrd}
+\RequirePackage{newtxmath}
+\RequirePackage[scaled=.94]{helvet}
+\RequirePackage[a4paper,top=21mm,bottom=20mm,left=22mm,right=22mm,headheight=14pt,headsep=7mm,footskip=12mm]{geometry}
+\RequirePackage{booktabs,longtable,tabularx,array,multirow}
+\RequirePackage{graphicx}
+\RequirePackage{microtype}
+\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage{enumitem}
+\RequirePackage{float}
+\RequirePackage{caption}
+\RequirePackage{url}
+\RequirePackage{titlesec}
+\RequirePackage{fancyhdr}
+\RequirePackage{tocloft}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{etoolbox}
+\RequirePackage{xparse}
+\RequirePackage{ragged2e}
+\RequirePackage{lastpage}
+\RequirePackage{hyperref}
+
+\definecolor{SeriesMaroon}{HTML}{8A2634}
+\definecolor{SeriesInk}{HTML}{202124}
+\definecolor{SeriesGray}{HTML}{666A70}
+\definecolor{SeriesLight}{HTML}{E3E4E6}
+\definecolor{SeriesPale}{HTML}{F5F2F2}
+
+\hypersetup{colorlinks=true,linkcolor=SeriesInk,citecolor=SeriesMaroon,urlcolor=SeriesMaroon,bookmarksnumbered=true}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt plus 1pt minus .5pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.035}
+\setlist{leftmargin=*,itemsep=2pt,topsep=5pt,parsep=0pt}
+\setlist[enumerate,1]{label=\arabic*.}
+\renewcommand{\arraystretch}{1.16}
+\setlength{\tabcolsep}{5pt}
+\captionsetup{font=small,labelfont={bf,sf,color=SeriesMaroon},textfont=it,justification=raggedright,singlelinecheck=false,skip=6pt}
+
+\providecommand{\PaperCode}{P00}
+\providecommand{\PaperKind}{RESEARCH PAPER}
+\providecommand{\PaperVersion}{VERSION 1.0}
+\providecommand{\PaperDate}{AUGUST 2026}
+\providecommand{\PaperTitle}{Untitled Paper}
+\providecommand{\PaperSubtitle}{}
+\providecommand{\PaperFullTitle}{\PaperTitle}
+\providecommand{\PaperShortTitle}{\PaperTitle}
+\providecommand{\PaperKeywords}{}
+\providecommand{\PaperClassification}{}
+\providecommand{\PaperCitation}{}
+\providecommand{\PaperDOI}{}
+
+\AtBeginDocument{\hypersetup{pdftitle={\PaperFullTitle},pdfauthor={Abhijit Singh},pdfsubject={\PaperKind\ \PaperCode}}}
+
+\fancypagestyle{series}{%
+  \fancyhf{}
+  \fancyhead[L]{\sffamily\fontsize{8.5}{10}\selectfont\color{SeriesGray}\MakeUppercase{\PaperShortTitle}}
+  \fancyhead[R]{\sffamily\fontsize{8.5}{10}\selectfont\color{SeriesGray}\PaperCode}
+  \fancyfoot[C]{\sffamily\fontsize{8.5}{10}\selectfont\color{SeriesInk}\thepage}
+  \renewcommand{\headrulewidth}{.35pt}
+  \renewcommand{\footrulewidth}{0pt}}
+\pagestyle{series}
+
+\titleformat{\part}[block]
+  {\sffamily\bfseries\color{SeriesMaroon}\fontsize{16}{19}\selectfont}
+  {Part \thepart}{.8em}{}
+  [\vspace{.35ex}\color{SeriesLight}\titlerule]
+\titlespacing*{\part}{0pt}{2.5ex plus .6ex minus .3ex}{1.3ex}
+\titleformat{\section}[hang]
+  {\sffamily\bfseries\color{SeriesInk}\fontsize{17}{20}\selectfont}
+  {\thesection}{1.1em}{}
+  [\vspace{.35ex}\color{SeriesLight}\titlerule]
+\titlespacing*{\section}{0pt}{3.0ex plus .7ex minus .4ex}{1.25ex}
+\titleformat{name=\section,numberless}[block]
+  {\sffamily\bfseries\color{SeriesInk}\fontsize{17}{20}\selectfont}
+  {}{0pt}{}
+  [\vspace{.35ex}\color{SeriesLight}\titlerule]
+\titlespacing*{name=\section,numberless}{0pt}{2.5ex plus .6ex minus .3ex}{1.2ex}
+\titleformat{\subsection}[hang]
+  {\sffamily\bfseries\color{SeriesMaroon}\fontsize{12.5}{15}\selectfont}
+  {\thesubsection}{.8em}{}
+\titlespacing*{\subsection}{0pt}{2.2ex plus .5ex minus .3ex}{.8ex}
+\titleformat{\subsubsection}[hang]
+  {\sffamily\bfseries\color{SeriesInk}\fontsize{10.8}{13}\selectfont}
+  {\thesubsubsection}{.75em}{}
+\titlespacing*{\subsubsection}{0pt}{1.8ex plus .4ex minus .2ex}{.5ex}
+\titleformat{\paragraph}[runin]
+  {\sffamily\bfseries\color{SeriesInk}}
+  {}{0pt}{}[.]
+
+\newtheoremstyle{seriesplain}{6pt}{6pt}{\itshape}{}% body indent
+  {\sffamily\bfseries\color{SeriesMaroon}}{.}{.55em}{}
+\newtheoremstyle{seriesdefinition}{6pt}{6pt}{\normalfont}{}% body indent
+  {\sffamily\bfseries\color{SeriesMaroon}}{.}{.55em}{}
+\theoremstyle{seriesplain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{criterion}[theorem]{Criterion}
+\theoremstyle{seriesdefinition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\1}{\mathbf{1}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\spec}{\operatorname{spec}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\real}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\pandocbounded}[1]{#1}
+
+\newtcolorbox{seriesstatus}{enhanced,breakable,colback=SeriesPale,colframe=SeriesMaroon,boxrule=.45pt,arc=0pt,left=8pt,right=8pt,top=6pt,bottom=6pt,borderline west={2pt}{0pt}{SeriesMaroon}}
+\newcommand{\claimstatus}[1]{\begin{seriesstatus}\sffamily\small\textbf{Claim status.} #1\end{seriesstatus}}
+
+\renewcommand{\cfttoctitlefont}{\sffamily\bfseries\fontsize{20}{24}\selectfont\color{SeriesInk}}
+\renewcommand{\cftaftertoctitle}{\par\vspace{.35ex}\color{SeriesLight}\hrule\vspace{1.2ex}}
+\renewcommand{\cftsecfont}{\sffamily\color{SeriesInk}}
+\renewcommand{\cftsecpagefont}{\sffamily\color{SeriesInk}}
+\renewcommand{\cftsubsecfont}{\sffamily\small\color{SeriesGray}}
+\renewcommand{\cftsubsecpagefont}{\sffamily\small\color{SeriesGray}}
+\renewcommand{\cftpartfont}{\sffamily\bfseries\color{SeriesMaroon}}
+\renewcommand{\cftpartpagefont}{\sffamily\bfseries\color{SeriesMaroon}}
+\renewcommand{\cftdotsep}{2}
+\setlength{\cftbeforesecskip}{4.5pt}
+\setlength{\cftbeforesubsecskip}{1.5pt}
+\setcounter{tocdepth}{1}
+
+\NewDocumentCommand{\MakeResearchTitle}{}{% 
+  \thispagestyle{empty}
+  \vspace*{7mm}
+  {\sffamily\fontsize{9.5}{11}\selectfont\color{SeriesMaroon}\MakeUppercase{\PaperKind\;\textperiodcentered\;\PaperCode\;\textperiodcentered\;\PaperVersion\;\textperiodcentered\;\PaperDate}\par}
+  \vspace{3mm}{\color{SeriesMaroon}\hrule height .7pt}
+  \vspace*{42mm}
+  {\sffamily\bfseries\color{SeriesInk}\fontsize{29}{34}\selectfont\RaggedRight \PaperTitle\par}
+  \ifx\PaperSubtitle\empty\else
+    \vspace{5mm}{\itshape\color{SeriesGray}\fontsize{17}{21}\selectfont\RaggedRight \PaperSubtitle\par}
+  \fi
+  \vspace{16mm}
+  {\sffamily\bfseries\fontsize{12.5}{15}\selectfont Abhijit Singh\par}
+  \vfill
+  \clearpage
+  \pagestyle{series}}
+
+\NewDocumentCommand{\MakeResearchContents}{}{% 
+  \tableofcontents
+  \thispagestyle{series}
+  \clearpage}
+
+\NewDocumentCommand{\MakeResearchAbstract}{m}{%
+  \phantomsection\addcontentsline{toc}{section}{Abstract}
+  \section*{Abstract}
+  #1\par
+  \vspace{1.2ex}
+  {\sffamily\color{SeriesMaroon}\textbf{Keywords:}}\quad \PaperKeywords\par
+  \vspace{.6ex}
+  {\sffamily\color{SeriesMaroon}\textbf{Scope and status:}}\quad \PaperClassification\par
+  \ifx\PaperCitation\empty\else
+    \vspace{.6ex}{\sffamily\color{SeriesMaroon}\textbf{Suggested citation:}}\quad \PaperCitation\par
+  \fi
+  \vspace{.6ex}{\sffamily\color{SeriesMaroon}\textbf{Document status:}}\quad Research manuscript, \PaperVersion, \PaperDate.\par
+  \ifx\PaperDOI\empty\else
+    \vspace{.6ex}{\sffamily\color{SeriesMaroon}\textbf{DOI:}}\quad \PaperDOI\par
+  \fi
+  \clearpage}
+
+\AtBeginEnvironment{thebibliography}{\phantomsection\addcontentsline{toc}{section}{References}}
+\renewcommand{\refname}{References}

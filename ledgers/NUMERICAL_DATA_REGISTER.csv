@@ -1,0 +1,28 @@
+paper_id,quantity,value,unit
+P02,n=4 seed entropy,1.6009,bits
+P02,n=4 steady entropy rate,1.0,bits/use
+P02,KCBS no-outcome replacement threshold,0.8396425434,probability
+P02,KCBS minimum event cost,0.503785526,events/use
+P02,instrument entropy rate,1.8413629168,bits/use
+P02,instrument predictive information,0.1580957201,bits
+P10,relation-aware exact whole object,97.78,percent
+P10,context admitted-coordinate,99.768,percent
+P10,environment coordinate baseline,72.0836,percent
+P10,environment coordinate restored,74.7125,percent
+P10,environment exact-vector baseline,3.754,percent
+P10,environment exact-vector restored,7.2492,percent
+P13,first droplet directional information,24.6,bits
+P13,refinement ramp,10.7,bits
+P13,helium kinks/track,0.19,count
+P13,air kinks/track,0.95,count
+P13,argon kinks/track,6.1,count
+P14,"Omega_Lambda,0",0.6666666666666666,fraction
+P14,H0 t0,0.9358813101,dimensionless
+P14,Delta N,0.4620981204,e-folds
+P16,coarse benchmark correct,6,cases
+P16,repaired benchmark correct,12,cases
+P17,active state count,9,
+P17,complete pair relation count,36,
+P17,relation decomposition,8 unit + 4 return + 24 transverse,
+P17,prime-indexed sectors,"2,3,5,7",
+P17,static terminal-resolved Mobius classes,5,

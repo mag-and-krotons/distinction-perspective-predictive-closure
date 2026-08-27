@@ -1,0 +1,31 @@
+{
+  "Kraft_sum_as_float": 0.9375,
+  "absolute_character_sums": {
+    "1.0": 0.9375,
+    "1.25": 0.5869227272334965,
+    "1.5": 0.42621799934269783,
+    "2.0": 0.26634109020233154
+  },
+  "arity_P1_coordinate": 4,
+  "connected_counts_by_event_rank": [
+    1,
+    4,
+    25,
+    292
+  ],
+  "encoded_connected_generators": 322,
+  "finite_completion_parity": "even",
+  "finite_horizon_Kraft_sum": "15/16",
+  "interpretation": "the displayed code is one audit member; only prefix capacity and the resulting Re(s)>1 convergence law descend across all codes",
+  "length_enumerator": {
+    "1": 1,
+    "4": 4,
+    "7": 7,
+    "8": 18,
+    "12": 220,
+    "13": 72
+  },
+  "prefix_free": true,
+  "status": "one finite P1 code audit plus the code-fiber capacity law; no code-specific product is promoted to the source",
+  "total_code_length": 3786
+}

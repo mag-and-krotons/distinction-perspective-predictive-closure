@@ -1,0 +1,23 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "False closure occurs when a current report merges source occurrences whose admitted futures require different actions. A finite theory and executable architecture are developed to detect and repair that failure. Behavioural equivalence is separated from occurrence provenance; complete future signatures define the unique coarsest predictive refinement; and essential coordinates form the unique least direct-coordinate basis for a complete finite table. Representation changes are conservative extensions of valid old reports and are admitted only after native downstream use, matched ablation/restoration, restart recomputation, and hash-bound transport. Two finite constructions derive contextual object and relation classes, role symmetry, semantic arity, and transformation maps from source-addressed interactions. The supplied implementation evidence includes a large conformance suite, an independently executed 22-test transfer subset, and a collision benchmark in which the repaired state doubles exact continuation from 6/12 to 12/12. A new nine-state benchmark exercises relation-frontier discovery, conservative side-coordinate promotion, and arithmetic support-state repair.",
+  "keywords": [
+    "predictive quotient",
+    "provenance",
+    "representation synthesis",
+    "active learning",
+    "source address",
+    "schema evolution"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-08-27",
+  "related_identifiers": [],
+  "resource_type": "publication-article",
+  "title": "Provenance-Preserving Representation Genesis in Finite Deterministic Systems",
+  "version": "1.1.0"
+}

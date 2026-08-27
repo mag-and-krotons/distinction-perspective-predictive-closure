@@ -1,0 +1,23 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "A causal systems model is developed in which memory, world prediction, self-modelling, action, and successor-state updating remain jointly integrated across a moving temporal window. A completed record cannot causally participate in producing the identical token episode in an acyclic model; complete self-description is therefore partial during the episode or available to a successor episode. Histories are grouped by intervention-conditioned future reports to define minimal predictive states. Quantitative observables are proposed for integration gain, reflexive use, temporal depth, counterfactual control, and boundary co-migration. A randomized source-versus-report intervention design, chronological validation protocol, blind comparator family, rival-theory test, and replication ladder are specified. The functional architecture is separated from the empirical claim that it is sufficient for subjective experience.",
+  "keywords": [
+    "consciousness",
+    "predictive processing",
+    "self-model",
+    "causal integration",
+    "temporal continuity",
+    "intervention"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-08-27",
+  "related_identifiers": [],
+  "resource_type": "publication-article",
+  "title": "Reflexive Predictive Integration: A Testable Systems Model of Conscious Processing",
+  "version": "1.0.0"
+}

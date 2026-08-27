@@ -1,0 +1,121 @@
+{
+  "arity_P1_coordinate": 4,
+  "component_factorization": {
+    "all_native_counts_including_empty": [
+      1,
+      1,
+      5,
+      30,
+      332
+    ],
+    "connected_counts_by_event_number": [
+      1,
+      4,
+      25,
+      292
+    ],
+    "formal_identity": "U(y)=product_{m>=1}(1-y^m)^(-c_m); no analytic convergence or zero set is asserted"
+  },
+  "layers": [
+    {
+      "all_noninitial_polynomials_vanish_at_one": true,
+      "binary_null_classes": 0,
+      "binary_rank_character_histogram": {
+        "1": 1
+      },
+      "component_product_reconstructs_total": true,
+      "connected_native_classes": 1,
+      "distinct_interval_characteristic_polynomials": 1,
+      "events_P1_coordinate": 1,
+      "mobius_residue_histogram": {
+        "1": 1
+      },
+      "native_incidence_classes": 1
+    },
+    {
+      "all_noninitial_polynomials_vanish_at_one": true,
+      "binary_null_classes": 0,
+      "binary_rank_character_histogram": {
+        "1": 5
+      },
+      "component_product_reconstructs_total": true,
+      "connected_native_classes": 4,
+      "distinct_interval_characteristic_polynomials": 1,
+      "events_P1_coordinate": 2,
+      "mobius_residue_histogram": {
+        "-1": 5
+      },
+      "native_incidence_classes": 5
+    },
+    {
+      "all_noninitial_polynomials_vanish_at_one": true,
+      "binary_null_classes": 3,
+      "binary_rank_character_histogram": {
+        "0": 3,
+        "1": 18,
+        "2": 9
+      },
+      "component_product_reconstructs_total": true,
+      "connected_native_classes": 25,
+      "distinct_interval_characteristic_polynomials": 3,
+      "events_P1_coordinate": 3,
+      "mobius_residue_histogram": {
+        "0": 9,
+        "1": 18,
+        "2": 3
+      },
+      "native_incidence_classes": 30
+    },
+    {
+      "all_noninitial_polynomials_vanish_at_one": true,
+      "binary_null_classes": 30,
+      "binary_rank_character_histogram": {
+        "-1": 21,
+        "0": 30,
+        "1": 104,
+        "2": 101,
+        "3": 58,
+        "4": 17,
+        "5": 1
+      },
+      "component_product_reconstructs_total": true,
+      "connected_native_classes": 292,
+      "distinct_interval_characteristic_polynomials": 13,
+      "events_P1_coordinate": 4,
+      "mobius_residue_histogram": {
+        "-1": 141,
+        "-2": 38,
+        "-3": 43,
+        "-4": 1,
+        "0": 109
+      },
+      "native_incidence_classes": 332
+    }
+  ],
+  "status": "unweighted native extension relation; no uniform history or isomorphism-class accounting is used in its Mobius values",
+  "two_event_accounting_counterexample": {
+    "interpretation": "these accountings have different zero geometry, so neither zero law descends from the unweighted source relation",
+    "one_per_native_class_coefficients": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "raw_named_history_coefficients": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      4,
+      6,
+      4,
+      1
+    ]
+  }
+}

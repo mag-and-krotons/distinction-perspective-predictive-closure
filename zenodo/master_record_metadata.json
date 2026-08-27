@@ -1,0 +1,34 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "A versioned research release containing 18 specialist papers, one scientific atlas, individual submission packages, data, verification code, theorem and correction ledgers, and source archives. Release 8.0.2 preserves the academic-source separation completed in 8.0.1 and corrects Git-canonical checksums, publication metadata, and clean-clone verification. The formal prime-observer theorem remains fully typeset and supported by formal diagrams, tables, code, and data.",
+  "keywords": [
+    "distinction",
+    "predictive closure",
+    "quantum instruments",
+    "prime arity",
+    "representation genesis",
+    "recurrence exponent",
+    "source-closed arithmetic"
+  ],
+  "licenses": [
+    "CC-BY-4.0",
+    "MIT"
+  ],
+  "publication_date": "2026-08-27",
+  "record_creation_mode": "manual-ui-template",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/mag-and-krotons/distinction-perspective-predictive-closure",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    }
+  ],
+  "resource_type": "publication-other",
+  "title": "Distinction, Perspective, and Predictive Closure: Complete Research Release 8.0.2",
+  "version": "8.0.2"
+}

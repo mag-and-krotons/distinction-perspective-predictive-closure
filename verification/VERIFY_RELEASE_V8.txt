@@ -1,0 +1,8 @@
+{
+  "author": "Abhijit Singh",
+  "combined_pages": 200,
+  "individual_submission_packages": 19,
+  "paper_and_atlas_units": 19,
+  "relation_rows": 36,
+  "status": "PASS"
+}

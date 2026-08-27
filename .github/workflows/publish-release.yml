@@ -1,0 +1,167 @@
+name: publish-release
+
+on:
+  push:
+    tags:
+      - 'v8.0.2'
+
+permissions: {}
+
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'mag-and-krotons/distinction-perspective-predictive-closure'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out immutable tag
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Validate release identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected_tag="v$(tr -d '\r\n' < VERSION)"
+
+          test "${GITHUB_REF_TYPE}" = "tag"
+          test "${GITHUB_REF_NAME}" = "${expected_tag}"
+          test "$(git cat-file -t "refs/tags/${GITHUB_REF_NAME}")" = "tag"
+
+          tag_commit="$(git rev-parse "refs/tags/${GITHUB_REF_NAME}^{commit}")"
+          head_commit="$(git rev-parse HEAD)"
+          main_commit="$(git rev-parse refs/remotes/origin/main)"
+
+          test "${tag_commit}" = "${head_commit}"
+          test "${tag_commit}" = "${main_commit}"
+          test -z "$(git status --porcelain --untracked-files=all)"
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Install verification dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y poppler-utils
+          python -m pip install --disable-pip-version-check \
+            --requirement requirements-release.txt
+
+      - name: Verify immutable repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/verify_release.py
+          test -z "$(git status --porcelain --untracked-files=all)"
+
+      - name: Build and reproduce release attachments
+        shell: bash
+        run: |
+          set -euo pipefail
+          primary="${RUNNER_TEMP}/release-assets"
+          repeat="${RUNNER_TEMP}/release-assets-repeat"
+          mkdir -p "${primary}" "${repeat}"
+
+          python scripts/build_release_attachments.py \
+            --output "${primary}" \
+            --tag "${GITHUB_REF_NAME}"
+          python scripts/build_release_attachments.py \
+            --output "${repeat}" \
+            --tag "${GITHUB_REF_NAME}"
+
+          cat > "${RUNNER_TEMP}/expected-assets.txt" <<'EOF'
+          Abhijit_Singh_Individual_Submission_Packages_v8.0.2.zip
+          Abhijit_Singh_Zenodo_Git_Release_v8.0.2.bundle
+          Abhijit_Singh_Zenodo_Git_Release_v8.0.2.zip
+          COMPLETE_PAPER_SERIES.pdf
+          MASTER_SCIENTIFIC_ATLAS.pdf
+          RELEASE_ASSET_SHA256SUMS.txt
+          EOF
+          find "${primary}" -mindepth 1 -maxdepth 1 -type f \
+            -printf '%f\n' | LC_ALL=C sort > "${RUNNER_TEMP}/actual-assets.txt"
+          test "$(find "${primary}" -mindepth 1 -maxdepth 1 | wc -l)" -eq 6
+          diff -u \
+            "${RUNNER_TEMP}/expected-assets.txt" \
+            "${RUNNER_TEMP}/actual-assets.txt"
+
+          (cd "${primary}" && sha256sum * | LC_ALL=C sort) \
+            > "${RUNNER_TEMP}/primary.sha256"
+          (cd "${repeat}" && sha256sum * | LC_ALL=C sort) \
+            > "${RUNNER_TEMP}/repeat.sha256"
+          diff -u \
+            "${RUNNER_TEMP}/primary.sha256" \
+            "${RUNNER_TEMP}/repeat.sha256"
+          (cd "${primary}" && sha256sum --check RELEASE_ASSET_SHA256SUMS.txt)
+
+      - name: Validate portable archives
+        shell: bash
+        run: |
+          set -euo pipefail
+          assets="${RUNNER_TEMP}/release-assets"
+          version="${GITHUB_REF_NAME#v}"
+          stem="Abhijit_Singh_Zenodo_Git_Release_v${version}"
+          bundle="${assets}/${stem}.bundle"
+          repository_zip="${assets}/${stem}.zip"
+          submissions_zip="${assets}/Abhijit_Singh_Individual_Submission_Packages_v${version}.zip"
+          expected_commit="$(git rev-parse "refs/tags/${GITHUB_REF_NAME}^{commit}")"
+
+          git bundle verify "${bundle}"
+          unzip -tq "${repository_zip}"
+          unzip -tq "${submissions_zip}"
+
+          git clone --quiet "${bundle}" "${RUNNER_TEMP}/bundle-clone"
+          test "$(git -C "${RUNNER_TEMP}/bundle-clone" rev-parse HEAD)" = \
+            "${expected_commit}"
+          git -C "${RUNNER_TEMP}/bundle-clone" fsck --full --strict
+          python "${RUNNER_TEMP}/bundle-clone/scripts/verify_release.py"
+
+          mkdir "${RUNNER_TEMP}/zip-clone"
+          unzip -q "${repository_zip}" -d "${RUNNER_TEMP}/zip-clone"
+          python \
+            "${RUNNER_TEMP}/zip-clone/${stem}/scripts/verify_release.py"
+
+      - name: Publish verified GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME}"
+          assets="${RUNNER_TEMP}/release-assets"
+          downloaded="${RUNNER_TEMP}/downloaded-assets"
+
+          if gh release view "${tag}" >/dev/null 2>&1; then
+            echo "Release ${tag} already exists; refusing to overwrite it." >&2
+            exit 1
+          fi
+
+          gh release create "${tag}" "${assets}"/* \
+            --draft \
+            --verify-tag \
+            --title "Release ${tag#v}" \
+            --notes-file RELEASE_NOTES.md
+
+          mkdir "${downloaded}"
+          gh release download "${tag}" --dir "${downloaded}"
+          (cd "${downloaded}" && sha256sum * | LC_ALL=C sort) \
+            > "${RUNNER_TEMP}/downloaded.sha256"
+          diff -u \
+            "${RUNNER_TEMP}/primary.sha256" \
+            "${RUNNER_TEMP}/downloaded.sha256"
+          (cd "${downloaded}" && sha256sum --check RELEASE_ASSET_SHA256SUMS.txt)
+
+          gh release edit "${tag}" --draft=false --latest
+          test "$(gh release view "${tag}" --json isDraft --jq '.isDraft')" = "false"
+          gh release view "${tag}" --json url --jq '.url'

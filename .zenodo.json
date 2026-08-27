@@ -1,0 +1,31 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "Source repository for the individually compilable research papers, data, verification code, and theorem ledgers. Project-created code is additionally licensed under MIT; third-party materials retain their original terms.",
+  "keywords": [
+    "predictive quotient",
+    "recursive distinction",
+    "quantum instruments",
+    "representation repair",
+    "prime arity",
+    "relation closure",
+    "recurrence exponent",
+    "reproducibility"
+  ],
+  "language": "eng",
+  "license": "cc-by-4.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/mag-and-krotons/distinction-perspective-predictive-closure",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "title": "Distinction, Perspective, and Predictive Closure: Source and Reproducibility Repository",
+  "upload_type": "software",
+  "version": "8.0.2"
+}

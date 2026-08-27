@@ -1,0 +1,26 @@
+{
+  "status": "cross-boundary continuation and zero constraints derived from the full prime-arity character fibre; no gamma completion, randomness, or assumed zeta symmetry",
+  "full_p3_two_place_fibre_size": 9,
+  "old_diagonal_subfibre_size": 3,
+  "full_fibre_strictly_larger_than_diagonal": true,
+  "full_p3_two_place_orthogonality": true,
+  "binary_hasse_special_values": {
+    "H(0)": 0.5,
+    "Z(0)": -0.5,
+    "Z(-1)": -0.08333333333332758,
+    "Z(2)": 1.6449340668482266
+  },
+  "negative_even_binary_zeros_exact": {
+    "-2": "0",
+    "-4": "0",
+    "-6": "0"
+  },
+  "cross_prime_compatibility_residual_p3_p5": 4.440892098500626e-16,
+  "presentation_zero_residuals": {
+    "2": 5.945488079640104e-16,
+    "3": 2.142517852543556e-16,
+    "5": 1.6544460954782936e-16
+  },
+  "zero_constraint": "for 0<Re(s)<1 every factor 1-p^(1-s) is nonzero, so Z(s)=0 iff E_p(s)=0 for every (equivalently any) transparent p",
+  "interaction_rank": "one: E_p(s)=(1-p^(1-s)) Z(s); collapsed prime traces share one analytic carrier and cannot independently force Re(s)=1/2"
+}

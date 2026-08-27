@@ -1,0 +1,106 @@
+{
+  "arity_P1_coordinate": 4,
+  "complete_context_ambiguity_characteristic_by_exponent": {
+    "0": 1,
+    "1": -2,
+    "2": 1
+  },
+  "complete_context_binary_evaluation": 1,
+  "complete_context_global_fiber_histogram": {
+    "1": 318,
+    "2": 2
+  },
+  "interpretation": "interaction context refines perception fibers without altering any underlying native incidence form",
+  "layers": [
+    {
+      "complete_audited_context_classes": 1,
+      "complete_context_fiber_size_histogram": {
+        "1": 1
+      },
+      "connected_native_forms": 1,
+      "events_P1_coordinate": 1,
+      "past_indistinguishable_pair_future_delay_histogram": {},
+      "strict_past_fiber_size_histogram": {
+        "1": 1
+      },
+      "strict_past_observation_classes": 1
+    },
+    {
+      "complete_audited_context_classes": 4,
+      "complete_context_fiber_size_histogram": {
+        "1": 4
+      },
+      "connected_native_forms": 4,
+      "events_P1_coordinate": 2,
+      "past_indistinguishable_pair_future_delay_histogram": {
+        "1": 6
+      },
+      "strict_past_fiber_size_histogram": {
+        "4": 1
+      },
+      "strict_past_observation_classes": 1
+    },
+    {
+      "complete_audited_context_classes": 25,
+      "complete_context_fiber_size_histogram": {
+        "1": 25
+      },
+      "connected_native_forms": 25,
+      "events_P1_coordinate": 3,
+      "past_indistinguishable_pair_future_delay_histogram": {
+        "1": 15
+      },
+      "strict_past_fiber_size_histogram": {
+        "1": 9,
+        "2": 3,
+        "3": 2,
+        "4": 1
+      },
+      "strict_past_observation_classes": 15
+    },
+    {
+      "complete_audited_context_classes": 290,
+      "complete_context_fiber_size_histogram": {
+        "1": 288,
+        "2": 2
+      },
+      "connected_native_forms": 292,
+      "events_P1_coordinate": 4,
+      "past_indistinguishable_pair_future_delay_histogram": {
+        "not_resolved_within_horizon": 2
+      },
+      "strict_past_fiber_size_histogram": {
+        "1": 288,
+        "2": 2
+      },
+      "strict_past_observation_classes": 290
+    }
+  ],
+  "one_step_disjoint_context_theorem_verified_on_audit": true,
+  "status": "binary existence observations from the native extension relation; class counts are P1 audit metadata",
+  "strict_past_ambiguity_characteristic_by_exponent": {
+    "0": -144,
+    "1": 1728,
+    "10": -26850,
+    "11": 8394,
+    "12": -1872,
+    "13": 280,
+    "14": -25,
+    "15": 1,
+    "2": -9588,
+    "3": 32604,
+    "4": -75916,
+    "5": 128068,
+    "6": -161497,
+    "7": 154785,
+    "8": -113484,
+    "9": 63516
+  },
+  "strict_past_binary_evaluation": 0,
+  "strict_past_global_fiber_histogram": {
+    "1": 298,
+    "2": 5,
+    "3": 2,
+    "4": 2
+  }
+}

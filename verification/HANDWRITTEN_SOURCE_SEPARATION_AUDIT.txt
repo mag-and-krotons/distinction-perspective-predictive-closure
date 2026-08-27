@@ -1,0 +1,4 @@
+status: PASS
+raw handwritten assets in academic/public trees: 0
+P17 manuscript pages: 8
+combined series pages: 200

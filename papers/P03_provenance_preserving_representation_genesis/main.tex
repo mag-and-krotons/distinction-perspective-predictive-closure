@@ -1,0 +1,227 @@
+\pdfoutput=1
+\documentclass[11pt,a4paper]{article}
+\usepackage{abhijit-research}
+\renewcommand{\PaperCode}{P03}
+\renewcommand{\PaperKind}{RESEARCH PAPER}
+\renewcommand{\PaperVersion}{VERSION 1.1}
+\renewcommand{\PaperDate}{AUGUST 2026}
+\renewcommand{\PaperTitle}{Provenance-Preserving Representation Genesis}
+\renewcommand{\PaperSubtitle}{Finite Deterministic Systems}
+\renewcommand{\PaperFullTitle}{Provenance-Preserving Representation Genesis in Finite Deterministic Systems}
+\renewcommand{\PaperShortTitle}{Representation Genesis}
+\renewcommand{\PaperKeywords}{predictive quotient; provenance; representation synthesis; active learning; source address; schema evolution}
+\renewcommand{\PaperClassification}{Theorems are finite and relative to the declared continuation or complete direct-table envelope. Executable claims are limited to the supplied implementation and tests. Empirical truth and open-world discovery are not inferred.}
+\renewcommand{\PaperCitation}{Singh, Abhijit. 2026. \textit{Provenance-Preserving Representation Genesis in Finite Deterministic Systems}. Research manuscript, version 1.0.}
+\begin{document}
+\MakeResearchTitle
+\MakeResearchContents
+\MakeResearchAbstract{%
+False closure occurs when a current report merges source occurrences whose admitted futures require different actions. A finite theory and executable architecture are developed to detect and repair that failure. Behavioural equivalence is separated from occurrence provenance; complete future signatures define the unique coarsest predictive refinement; and essential coordinates form the unique least direct-coordinate basis for a complete finite table. Representation changes are conservative extensions of valid old reports and are admitted only after native downstream use, matched ablation/restoration, restart recomputation, and hash-bound transport. Two finite constructions derive contextual object and relation classes, role symmetry, semantic arity, and transformation maps from source-addressed interactions. The supplied implementation evidence includes a large conformance suite, an independently executed 22-test transfer subset, and a collision benchmark in which the repaired state doubles exact continuation from 6/12 to 12/12. A new nine-state benchmark exercises relation-frontier discovery, conservative side-coordinate promotion, and arithmetic support-state repair.
+}
+\section{False closure}
+A predictive system usually begins with designer-supplied objects, actions, memory fields, and evaluation functions. The structural failure studied here occurs when two source occurrences receive one current report although an admitted continuation requires different actions.
+
+Let $S$ be a finite source set, $U:S\to Y$ a reporter, and $C(s)$ the set of correct continuation actions from $s$.
+\begin{proposition}[Impossibility under a lossy report]
+If $C(s)\cap C(t)=\varnothing$ and $U(s)=U(t)$, no deterministic policy of the form $\pi=\widehat\pi\circ U$ can be correct on both $s$ and $t$.
+\end{proposition}
+\begin{proof}
+Report equality forces $\pi(s)=\pi(t)$. Correctness would require the common action to belong to two disjoint sets.
+\end{proof}
+This is false closure: the present report is locally correct but is not a congruence for the declared future operations.
+
+\section{Future equivalence and occurrence provenance}
+For a continuation envelope $\Lambda$, define
+\begin{equation}
+s\equiv_\Lambda t\quad\Longleftrightarrow\quad
+\operatorname{Fut}_\Lambda(s)=\operatorname{Fut}_\Lambda(t).
+\end{equation}
+The reporter is sound exactly when
+\begin{equation}
+U(s)=U(t)\Longrightarrow s\equiv_\Lambda t.
+\end{equation}
+Behavioural equivalence does not erase occurrence identity. The implementation therefore stores two linked structures:
+\begin{enumerate}
+\item a predictive quotient used for decision and continuation;
+\item an append-only occurrence graph carrying source address, parents, proof scope, operation version, and receipt hashes.
+\end{enumerate}
+Two occurrences can share every covered future while remaining distinct historical events. Conversely, a new occurrence hash is not new semantic knowledge unless a later continuation uses it.
+
+\section{Generative definition}
+An extensional reporter $D_0:X\to\{0,1\}$ specifies visible membership but does not determine how objects were formed, what operations are admissible, or what evidence can revise the field. A generative definition is represented as
+\begin{equation}
+D=(A,O,I,R,U),
+\end{equation}
+where $A$ is an occurrence-address space, $O$ a typed operation family, $I$ the invariants that must survive, $R$ a continuation/re-entry law, and $U$ a forgetful reporter. The lift is conservative when the old report is recovered by projection and nonredundant when a possible future separates two lifted occurrences merged by $U$.
+
+\section{Predictive quotient construction}
+Given a complete finite direct table, define the response signature
+\begin{equation}
+\Sigma_\Lambda(s)=\bigl(U(\lambda s)\bigr)_{\lambda\in\Lambda}.
+\end{equation}
+Equality of signatures is the coarsest reporter sufficient for the declared continuation family.
+\begin{theorem}[Least predictive refinement]
+If a reporter $V$ refines $U$ and every response $U\circ\lambda$ factors through $V$, then $\Sigma_\Lambda$ factors through $V$. Hence $\Sigma_\Lambda$ is the unique coarsest future-sufficient refinement up to equality of fibres.
+\end{theorem}
+\begin{proof}
+If $V(s)=V(t)$, sufficiency makes every response coordinate equal, so $\Sigma_\Lambda(s)=\Sigma_\Lambda(t)$.
+\end{proof}
+A counterexample-guided compiler starts with $U$, finds a shortest separating continuation, adds its response coordinate, and repeats. On a finite carrier every strict split increases the number of classes, so the process terminates after at most $|S|-|U(S)|$ strict refinements.
+
+\section{Essential-coordinate theorem}
+Let $X\subseteq X_1\times\cdots\times X_d$ be a complete covered table and $f:X\to Y$ its response. A coordinate set $J$ is sufficient when $f$ factors through the projection $\pi_J$. Coordinate $j$ is essential if two rows agree on all other coordinates but differ in both coordinate $j$ and output.
+\begin{theorem}[Unique least direct-coordinate basis]
+Under complete coverage, every sufficient coordinate set contains every essential coordinate, and the essential coordinates are sufficient. They therefore form the unique least direct-coordinate basis.
+\end{theorem}
+\begin{proof}
+Omitting an essential coordinate merges its witnessing pair and makes the output nonfunctional. Conversely, if two rows agreeing on all essential coordinates had different outputs, a minimal output-changing pair would witness an additional essential coordinate.
+\end{proof}
+The theorem is minimality within the displayed direct-coordinate class. It does not rule out redundant encodings or nonlinear representations outside that class.
+
+\section{Relations, symmetries, and arity}
+The audited finite fixture induces six contextual object classes and two relation classes. One relation is an unordered ternary relation with 27 complete formation rows. Role exchange is treated as a symmetry only when the complete response table is invariant under that exchange. Semantic arity is derived from the least sufficient role set, not read from the syntax of the input tuple.
+
+\section{Conservative return and native use}
+A new coordinate $\eta$ is returned by
+\begin{equation}
+\widetilde U(s)=(U(s),\eta(s)),\qquad \pi_1\widetilde U=U.
+\end{equation}
+Admission requires all of the following:
+\begin{enumerate}
+\item source address and parent relation;
+\item proof or test scope;
+\item an ordinary later continuation that reads the returned coordinate;
+\item an ablation that removes the improvement;
+\item restoration that restores it;
+\item recomputation after restart from canonical source bytes.
+\end{enumerate}
+A label, comment, memory note, or new hash does not satisfy native use by itself.
+
+\section{Joint coherent occurrences}
+Two nonsequential returns from one source should not be serialized into a fictitious temporal chain. Represent them as
+\begin{equation}
+(r_A,r_B,\Gamma_{AB}),
+\end{equation}
+where $\Gamma_{AB}$ carries compatibility, exclusion, shared assumptions, and operative composition. A later computation must read $\Gamma_{AB}$; branch ablation or dephasing must change the result. This preserves the difference between two occurrences and one repeated payload.
+
+\section{Restart, transport, and authority boundaries}
+A durable result must survive process restart. The reference transport binds source hashes, operation version, input schema, expected receipt schema, and output hash. A worker result is rejected if any binding differs, even when visible output text happens to match.
+
+The engine may propose a representation change and execute locally authorized tests. Consequential external action remains outside the theorem. Source integrity proves where a result came from; it does not prove that the source is empirically true.
+
+\section{Executable evidence}
+The complete source record reports 299 overlapping conformance tests and 17 isolated-process reproduction checks. The locally supplied transfer subset independently passes 22 tests. The separate collision benchmark introduced with this paper contains six collision families and 12 cases. A coarse reporter is correct on 6 of 12; the least promoted coordinate set raises correctness to 12 of 12, and removing either promoted coordinate reintroduces a collision.
+
+\begin{table}[H]\centering
+\caption{Executable evidence retained by scope.}
+\begin{tabular}{lrrl}
+\toprule
+Artifact & tests & passed & scope\\\midrule
+Complete source artifact & 299+17 & all reported & overlapping and isolated process checks\\
+Supplied transfer subset & 22 & 22 & carrier, integrity, transfer, restart behaviours\\
+Collision benchmark & 2 & 2 & repair improvement and coordinate essentiality\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{A 36-cell relation-frontier benchmark}
+The nine-state carrier provides a compact benchmark for representation repair. Its complete pair frontier has 36 cells. A coarse reporter keeps one unit state and four prime-sector labels while erasing the side coordinate of each sector. Under the side-flip continuation, the visible report is stationary but the source state alternates. The reporter is therefore adequate for value-only queries and inadequate for role-sensitive queries.
+
+A benchmark instance contains:
+\begin{enumerate}
+\item the nine source states and all 36 pair distinctions;
+\item the coarse five-label reporter;
+\item a hidden side-sensitive continuation;
+\item the separating coordinate $\varepsilon$;
+\item a conservative repair $(q,\varepsilon)$;
+\item an ablation that removes $\varepsilon$ and restores the collision.
+\end{enumerate}
+The companion verifier also tests the stronger arithmetic correction: the static five-class M\"obius reporter is not closed under prime multiplication, while the prime-support address plus an absorbing repeated-prime state is closed. This benchmark therefore joins finite relation genesis to an all-scale representation-growth example without claiming that the finite carrier itself is universal.
+
+\section{Complexity and limitations}
+For $d$ candidate coordinates, exhaustive direct-basis minimization can be exponential in $d$; collision-guided pruning can be substantially cheaper but has no universal polynomial guarantee. Predictive minimality is relative to the continuation envelope. Enlarging the operation set may split a state that was previously lawful. The results establish bounded representation synthesis in finite deterministic systems; they do not establish open-world ontology discovery, empirical truth, universal autonomy, or superiority over every learning architecture.
+
+\appendix
+\section{Reference algorithm}
+\begin{enumerate}
+\item Canonicalize source occurrences and preserve addresses.
+\item Compute current reports and declared future signatures.
+\item Detect report fibres containing more than one signature.
+\item Choose a shortest separator under a frozen tie-break.
+\item Refine the reporter conservatively.
+\item Verify native use by matched ablation and restoration.
+\item Recompute after restart and validate hash-bound transport.
+\item Stop only when every report fibre is a continuation congruence.
+\end{enumerate}
+
+
+\section{Two construction regimes}
+The representation problem appears in two finite forms.
+
+\subsection{Continuation-table construction}
+The first input is a finite source set, an initial reporter, and a declared family of continuations. Counterexamples to closure generate new response coordinates. Each strict refinement splits at least one report fibre; termination follows from finiteness. A certificate consists of the final quotient and, for every attempted proper coarsening, a continuation that separates a merged pair.
+
+\subsection{Direct-incidence construction}
+The second input supplies opaque occurrence addresses, physical incidence, domains, and a complete direct response table. No semantic object or relation names are supplied as targets. Contextual classes are induced by response equivalence, and a coordinate is admitted only when its omission creates an output collision. The audited fixture yields six object classes and two relation classes, including one unordered ternary relation with 27 complete rows. This is representation synthesis below the supplied semantic vocabulary but above the supplied physical incidence and response table.
+
+\section{Proof receipts and source identity}
+A durable claim record is represented as
+\begin{equation}
+r=(a,o,p,\Gamma,v),
+\end{equation}
+where $a$ is an immutable occurrence address, $o$ the report, $p$ the proof or empirical scope, $\Gamma$ the parent graph, and $v$ the operation version. Semantic equivalence may quotient $o$ for prediction; it never rewrites $a$ or $\Gamma$. This prevents four common failures:
+\begin{enumerate}
+\item a copied result is treated as a new derivation;
+\item a correction is separated from the claim it corrects;
+\item authorship and reporting roles are reversed;
+\item identical current values from different sources overwrite one another.
+\end{enumerate}
+Source integrity is not source truth. A hash proves which bytes were used, not whether those bytes are experimentally correct.
+
+\section{Collision certificates for minimality}
+For every coordinate excluded from a sufficient set, the implementation stores a collision pair. In the direct-coordinate model class this gives a constructive minimality certificate:
+\begin{equation}
+\mathcal C_j=(x,x',c,f(x,c),f(x',c)),
+\end{equation}
+where $x$ and $x'$ agree on all retained coordinates, differ on the excluded coordinate $j$, and require different outputs in context $c$. A basis is accepted only when all table rows are functional after projection and every selected coordinate has such a witness under its ablation.
+
+\section{Native-use test}
+Let $F$ denote an ordinary later continuation, $F^{-\eta}$ the same continuation after ablating returned coordinate $\eta$, and $F^{+\eta}$ the restored system. Native use requires
+\begin{equation}
+F\ne F^{-\eta},\qquad F^{+\eta}=F
+\end{equation}
+on the frozen test. This blocks sham re-entry in which a new label, comment, or receipt is created but no downstream operation reads it. Joint nonsequential returns are stored with a relation object $\Gamma_{AB}$; dephasing or branch ablation must change a later result before the relation is considered operative.
+
+\section{Restart and transport protocol}
+A clean restart receives only canonical source bytes, operation version, schema, and the declared fixture. It recomputes the proof object rather than loading a cached verdict. Remote work is accepted only when the receipt binds input hash, operation hash, output hash, and expected schema. Matching visible text under a different binding is rejected.
+
+\section{Executable test taxonomy}
+\begin{longtable}{p{.25\linewidth}p{.63\linewidth}}
+\toprule
+class&failure targeted\\\midrule
+source collision&two equal current values overwrite one another\\
+role reversal&author, reporter, and operator addresses are exchanged\\
+stale proof scope&a result is reused outside the continuation envelope that justified it\\
+missing parent&a claim loses the derivation or observation on which it depends\\
+duplicate address&two occurrences are falsely identified\\
+version drift&an operation changes without invalidating receipts\\
+sham metadata&a new field is recorded but never used\\
+return ablation&a claimed assimilation survives removal of the returned coordinate\\
+transport mutation&worker input or output differs from the signed job\\
+noncanonical serialization&equal semantic objects produce unstable hashes\\
+\bottomrule
+\end{longtable}
+
+The complete source artifact reports 299 overlapping checks and 17 isolated-process checks. The supplied transfer subset passes 22 tests. The collision benchmark deliberately merges provenance, time, role, relation, tool-version, and history-depth distinctions; its coarse report is correct on 6 of 12 cases, whereas the promoted direct basis closes all 12. Removing either selected coordinate recreates a collision.
+
+\section{Scaling and open-world boundary}
+Exact direct-coordinate minimization is exponential in the worst case. Counterexample-guided refinement can avoid enumerating all subsets, but no general polynomial bound is claimed. More importantly, the result is relative to a continuation envelope. A state minimal for current operations may fail when a new instrument or action becomes admissible. The architecture therefore retains occurrence provenance needed for later refinement instead of declaring the present quotient ontologically final.
+
+\begin{thebibliography}{99}
+\bibitem{myhill} J. Myhill, Finite automata and the representation of events, WADD Technical Report 57-624, 1957.
+\bibitem{nerode} A. Nerode, Linear automaton transformations, Proceedings of the American Mathematical Society 9 (1958), 541--544.
+\bibitem{angluin} D. Angluin, Learning regular sets from queries and counterexamples, Information and Computation 75 (1987), 87--106.
+\bibitem{crutchfield} J. P. Crutchfield and K. Young, Inferring statistical complexity, Physical Review Letters 63 (1989), 105--108.
+\bibitem{pearl} J. Pearl, Causality, Cambridge University Press, 2009.
+\end{thebibliography}
+\end{document}

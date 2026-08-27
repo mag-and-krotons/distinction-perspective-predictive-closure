@@ -1,0 +1,23 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "A quantitative record budget is developed for alpha-particle tracks in diffusion cloud chambers. The directional record is separated into an initial localization burst, a finite refinement ramp, a resolution-limited collinear regime, and a rare large-angle scattering channel. The declared model gives 24.6 bits at the first visible droplet, 10.7 additional bits over roughly forty droplets, 35.2 microscopic directional bits, and 24.8 bits at optical resolution. A depth-independent silence parameter follows from paired range and angular-spread scalings. The rare-scattering calculation predicts 0.19, 0.95, and 6.1 visible kinks per track in helium, air, and argon at standard conditions, with approximately 78 percent in the final fifth of each range. A blinded three-gas registered experiment is specified.",
+  "keywords": [
+    "cloud chamber",
+    "alpha track",
+    "Mott problem",
+    "information theory",
+    "scattering",
+    "detector experiment"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-08-27",
+  "related_identifiers": [],
+  "resource_type": "publication-article",
+  "title": "Directional Information Along Alpha-Particle Tracks and a Gas-Ladder Test",
+  "version": "1.0.0"
+}

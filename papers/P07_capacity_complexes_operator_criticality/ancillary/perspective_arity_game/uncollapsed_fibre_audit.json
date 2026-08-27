@@ -1,0 +1,27 @@
+{
+  "status": "uncollapsed digit characters coupled by carry; symmetric distinction and its completion derived without a random model or an assumed zeta functional equation",
+  "p3_two_place_modulus": 9,
+  "carry_mode_active_digit_components": 3,
+  "full_digit_fibre_size": 9,
+  "carry_mode_reconstructs_from_full_fibre": true,
+  "carry_modes_diagonalize_successor": true,
+  "carry_modes_diagonalize_symmetric_distinction": true,
+  "crt_character_interaction_residual": 1.9492241005813414e-15,
+  "scaled_spectrum_errors_to_continuum": {
+    "8": 1.9880855962355142,
+    "16": 0.5047382501362563,
+    "32": 0.12667187017338932,
+    "64": 0.031698502994323974,
+    "128": 0.007926535446394212
+  },
+  "theta_duality_residuals": {
+    "0.2": 4.440892098500626e-16,
+    "0.5": 2.220446049250313e-16,
+    "2.0": 0.0,
+    "5.0": 2.220446049250313e-16
+  },
+  "completed_xi_reflection_residual": 0.0,
+  "completed_xi_at_2": 0.5235987756002378,
+  "expected_xi_at_2": 0.5235987755982988,
+  "zero_orbit_law": "a nontrivial zero rho now forces conjugate(rho), 1-rho, and 1-conjugate(rho); the involution does not force rho to be its own reflected point"
+}

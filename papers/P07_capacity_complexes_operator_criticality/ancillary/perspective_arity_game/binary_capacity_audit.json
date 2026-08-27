@@ -1,0 +1,29 @@
+{
+  "all_sampled_integers_reconstructed_from_capacity_digits": true,
+  "anti_periodicity_verified": {
+    "1": true,
+    "128": true,
+    "16": true,
+    "2": true,
+    "256": true,
+    "32": true,
+    "4": true,
+    "64": true,
+    "8": true
+  },
+  "capacity_probe_sizes_P1_coordinate": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "generated_law": "for q=2^j, F_q^(q)(x)+F_q(x)=0 with initial derivatives F_q^(r)(0)=1 for 0<=r<q",
+  "interpretation": "one identity seed followed by capacities at arities 2,4,... exposes every binary digit of the P1 resultant-count coordinate",
+  "status": "P1 nontrivial binary sign character of source-generated incidence capacity; no RH or zeta input",
+  "unary_probe_status": "q=1 is the single identity seed, not a hypothetical unary distinguishing perspective; q>=2 are atomic-incidence capacities"
+}

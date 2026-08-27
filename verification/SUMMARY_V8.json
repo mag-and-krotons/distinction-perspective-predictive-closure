@@ -1,0 +1,18 @@
+{
+  "atlas_units": 1,
+  "author": "Abhijit Singh",
+  "author_and_affiliation_audit": "PASS",
+  "clean_source_compile": "19/19 PASS",
+  "combined_pages": 200,
+  "generated_at_utc": "2026-08-27T11:00:05.897453+00:00",
+  "handwritten_source_separation": "PASS - 0 raw note assets in academic/public release",
+  "individual_submission_packages": 19,
+  "pdf_preflight": "PASS",
+  "prime_observer_verifier": "PASS",
+  "relation_cells": 36,
+  "release": "8.0.2",
+  "restricted_terminology_audit": "PASS",
+  "specialist_papers": 18,
+  "state_transfer_tests": "22/22 PASS",
+  "visual_render": "200/200 pages"
+}

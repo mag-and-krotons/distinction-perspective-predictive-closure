@@ -1,0 +1,10 @@
+state,sector_q,side,kind,occupation_n2_n3_n5_n7,mobius,repdigit_hz
+1,unit,0,unit,"0,0,0,0",1,111
+2,2,+,prime-indexed,"1,0,0,0",-1,222
+3,3,+,prime-indexed,"0,1,0,0",-1,333
+4,7,-,repeated-prime-composite,"2,0,0,0",0,444
+5,5,+,prime-indexed,"0,0,1,0",-1,555
+6,5,-,squarefree-composite,"1,1,0,0",1,666
+7,7,+,prime-indexed,"0,0,0,1",-1,777
+8,3,-,repeated-prime-composite,"3,0,0,0",0,888
+9,2,-,repeated-prime-composite,"0,2,0,0",0,999

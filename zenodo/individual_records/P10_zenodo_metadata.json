@@ -1,0 +1,22 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "Two held-out studies test whether differences discarded by current-state compression remain relevant for later continuation. In a 1,797-sample, 64-coordinate corpus, three independently generated representations attain 90.74--92.96 percent exact whole-object continuation, while a relation-aware router using only child status, agreement, and prior contact performance reaches 97.78 percent, equal to the empirical oracle ceiling. A context-dependent return separately reaches 99.768 percent accuracy on admitted coordinates. In a 13-channel hourly environmental chronology, three constructors omit the same coordinate; four chronological contact blocks support restoration, and untouched-future performance improves from 72.0836 to 74.7125 percent per coordinate and from 3.7540 to 7.2492 percent for exact vectors. Negative controls reject indiscriminate higher arity and deeper history.",
+  "keywords": [
+    "representation disagreement",
+    "chronological validation",
+    "feature restoration",
+    "ensemble routing",
+    "predictive sufficiency"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-08-27",
+  "related_identifiers": [],
+  "resource_type": "publication-article",
+  "title": "Future-Relevant Representation Disagreement and Chronological Feature Restoration",
+  "version": "1.0.0"
+}

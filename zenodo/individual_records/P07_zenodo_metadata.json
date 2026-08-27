@@ -1,0 +1,23 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "Binary capacity and prime-transparent coordinates generate a squarefree arithmetic carrier under a shared logarithmic budget. The resulting quota complex admits an explicit acyclic matching: every odd squarefree carrier m produces one reduced homology class with exact persistence interval [m, 2m). The signed occupation is the Mertens sum. Retaining all nonbinary resultants gives a standard contrast representation whose full-fibre average cancels the linear charge, producing a quadratic completion boundary. Preservation of generated null pairs independently forces half-cost transport. The orientation operator is Hilbert-Schmidt exactly beyond one half and trace class only beyond one. The uniform odd scalar functional is proved nonclosable on the quadratic carrier. These are exact topological and operator statements, not a proof of a classical zero-location conjecture. Prime-occupation coordinates refine the finite composite sector into squarefree coupling and repeated-prime depth.",
+  "keywords": [
+    "capacity complex",
+    "persistent homology",
+    "squarefree incidence",
+    "operator ideals",
+    "null transport",
+    "scalarization"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-08-27",
+  "related_identifiers": [],
+  "resource_type": "publication-article",
+  "title": "Capacity Complexes, One-Bit Persistence, and Operator-Ideal Criticality",
+  "version": "1.1.0"
+}

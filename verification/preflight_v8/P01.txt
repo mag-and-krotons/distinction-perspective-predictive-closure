@@ -1,0 +1,6 @@
+PDF: /mnt/data/Abhijit_Singh_Zenodo_Git_Release_v8_0/papers/P01_future_complete_quotients_recursive_distinction/main.pdf
+Pages: 43
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

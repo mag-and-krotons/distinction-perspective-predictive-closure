@@ -1,0 +1,9 @@
+source_result,destination,mode,status
+prime triad source/unit/return,P01;P17,full theorem,integrated
+nine-state 36-relation closure,P00;P01;P03;P16;P17,full theorem and applications,integrated
+transparent prime sectors,P06;P17,exact theorem connection,integrated
+finite spectral labels and return planes,P05;P17,conditional quantum representation,integrated
+occupation-number composite refinement,P07;P17,exact arithmetic refinement,integrated
+static five-class false closure,P08;P17,exact theorem,integrated
+repdigit harmonic realization,P17,exact finite realization with scale boundary,integrated
+cross-projection nine-state/36-witness closure,P01;P03;P17,combinatorial correspondence with intertwiner warning,integrated

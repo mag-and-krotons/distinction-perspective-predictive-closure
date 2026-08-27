@@ -1,0 +1,23 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "A precise reporter-boundary theorem is developed: a global label fails to factor through a family of local reporters exactly when there exist locally indistinguishable but globally distinguishable configurations. This biconditional directly realizes the defining local/global structure of topological order. The result is separated from a broader analogy between self-reference obstruction and nontrivial bundles, because the latter currently lacks quantization and deformation stability. Classical future-equivalence classes give deterministic predictive-memory lower bounds, while nonorthogonal quantum memory can compress the same process. Marginals of a bipartite state omit a calculable number of joint-correlation coordinates, so compatible marginals do not determine the operative relation. A graded dictionary distinguishes exact, structural, and heuristic transfers and identifies the construction of a deformation-stable reflexive invariant as the principal open problem.",
+  "keywords": [
+    "local indistinguishability",
+    "topological order",
+    "predictive memory",
+    "factorization",
+    "bond dimension",
+    "obstruction"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-08-27",
+  "related_identifiers": [],
+  "resource_type": "publication-article",
+  "title": "Local Indistinguishability, Global Obstruction, and Minimal Predictive Memory",
+  "version": "1.0.0"
+}

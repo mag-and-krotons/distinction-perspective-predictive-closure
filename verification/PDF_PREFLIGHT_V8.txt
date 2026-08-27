@@ -1,0 +1,120 @@
+PDF: COMPLETE_PAPER_SERIES.pdf
+Pages: 200
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/A00_master_scientific_atlas/main.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P00_recurrence_exponents_state_promotion/main.pdf
+Pages: 9
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P01_future_complete_quotients_recursive_distinction/main.pdf
+Pages: 43
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P02_sequential_quantum_instruments/main.pdf
+Pages: 12
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P03_provenance_preserving_representation_genesis/main.pdf
+Pages: 9
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P04_stochastic_frontier_information/main.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P05_coherent_alternatives_complex_amplitudes/main.pdf
+Pages: 9
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P06_arity_indexed_refinement/main.pdf
+Pages: 9
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P07_capacity_complexes_operator_criticality/main.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P08_rh_equivalent_capacity_completion/main.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P09_twin_prime_moving_boundary_dispersion/main.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P10_predictive_disagreement_chronological_restoration/main.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P11_reenactable_closure_quantum_causal_representation/main.pdf
+Pages: 9
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P12_local_indistinguishability_boundary_obstruction/main.pdf
+Pages: 7
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P13_alpha_track_information_gas_ladder/main.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P14_returned_state_dust_vacuum_cosmology/main.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P15_reflexive_predictive_integration/main.pdf
+Pages: 7
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P16_adaptive_predictive_systems/main.pdf
+Pages: 10
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
+PDF: papers/P17_prime_observer_36_relation_closure/main.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

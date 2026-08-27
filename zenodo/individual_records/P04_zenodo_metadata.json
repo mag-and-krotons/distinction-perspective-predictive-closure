@@ -1,0 +1,23 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "A finite information measure is developed for distinctions newly revealed relative to a current reporter. Stochastic frontier information is the conditional min-entropy of a new mark given the existing report partition. On finite full-support carriers it is positive exactly when the mark causes a genuine partition refinement; for a uniform source an exact formula and a sharp lower bound in terms of combinatorial distinction gain are proved. A refinement/regraining entropy ledger yields a Landauer lower bound for sustained inquiry on finite cyclic memory. Independently, a cycle-holonomy theorem characterizes when local binary transition laws admit a global static valuation and when only a sequential occurrence index is consistent. Residual and accessibility exponents then separate dynamical instability from growth of inaccessible provenance.",
+  "keywords": [
+    "conditional min-entropy",
+    "predictive refinement",
+    "Landauer principle",
+    "causal order",
+    "contextuality",
+    "recurrence"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-08-27",
+  "related_identifiers": [],
+  "resource_type": "publication-article",
+  "title": "Stochastic Frontier Information, Finite-Memory Dissipation, and Cycle Holonomy",
+  "version": "1.0.0"
+}

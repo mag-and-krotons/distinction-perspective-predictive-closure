@@ -1,0 +1,21 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "author": [
+    {
+      "@type": "Person",
+      "familyName": "Singh",
+      "givenName": "Abhijit"
+    }
+  ],
+  "codeRepository": "https://github.com/mag-and-krotons/distinction-perspective-predictive-closure",
+  "datePublished": "2026-08-27",
+  "description": "Verification code and source packages for the research paper series.",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "name": "Distinction, Perspective, and Predictive Closure: Source and Reproducibility Repository",
+  "programmingLanguage": [
+    "Python",
+    "TeX"
+  ],
+  "version": "8.0.2"
+}

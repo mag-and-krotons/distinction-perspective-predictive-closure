@@ -1,0 +1,182 @@
+\pdfoutput=1
+\documentclass[11pt,a4paper]{article}
+\usepackage{abhijit-research}
+\renewcommand{\PaperCode}{P09}
+\renewcommand{\PaperKind}{RESEARCH PAPER}
+\renewcommand{\PaperVersion}{VERSION 1.0}
+\renewcommand{\PaperDate}{AUGUST 2026}
+\renewcommand{\PaperTitle}{Twin-Prime Survivors}
+\renewcommand{\PaperSubtitle}{Square-Horizon Occupation and Moving-Boundary Dispersion}
+\renewcommand{\PaperFullTitle}{Twin-Prime Survivors, Square-Horizon Occupation, and Moving-Boundary Dispersion}
+\renewcommand{\PaperShortTitle}{Twin-Prime Survivors}
+\renewcommand{\PaperKeywords}{twin primes; Chinese remainder theorem; sieve parity; signed dispersion; moving boundary; bilinear forms}
+\renewcommand{\PaperClassification}{Finite recursions, square-horizon equivalence, flux identities, and the conditional implication are exact. The live signed dispersion estimate is unproved. The Twin Prime Conjecture is not claimed.}
+\renewcommand{\PaperCitation}{Singh, Abhijit. 2026. \textit{Twin-Prime Survivors, Square-Horizon Occupation, and Moving-Boundary Dispersion}. Research manuscript, version 1.0.}
+\begin{document}
+\MakeResearchTitle
+\MakeResearchContents
+\MakeResearchAbstract{%
+A parity-preserving continuation of the twin-prime sieve is developed. Complete Chinese-remainder lift fibres give an exact survivor recursion and zero-drift normalized update over full residue blocks. At square-horizon depth, an odd survivor is exactly a twin-prime pair; the remaining problem is occupation of a moving interval rather than local admissibility. Decomposing the interval into complete blocks and one boundary block yields a signed moving-boundary flux. Divisor inversion retains the orientation and produces a controlled main term plus one coupled signed dispersion channel. Sublinear control of that channel implies a quantitative twin-prime lower bound. A first-deletion variable, path-relative entropy, profinite martingale, and finite Fourier transfer locate the unresolved parity information without solving it. Failed pointwise, martingale, unsigned-sieve, large-sieve, and resonance-scarcity routes are retained.
+}
+\section{Unchanged target and finite survivor system}
+Let
+\begin{equation}
+\pi_2(X)=\#\{p\le X:p\text{ and }p+2\text{ are prime}\}.
+\end{equation}
+The classical Twin Prime Conjecture is the statement $\pi_2(X)\to\infty$. The finite system below preserves this target and does not replace it with local admissibility.
+
+For a sieving frontier $z$, let
+\begin{equation}
+P_z=\prod_{p\le z}p.
+\end{equation}
+A residue class $a\bmod P_z$ survives the twin sieve when
+\begin{equation}
+a\not\equiv0,-2\pmod p
+\end{equation}
+for every odd prime $p\le z$, with the usual parity restriction at $p=2$.
+
+\section{Exact CRT lift recursion}
+When the next prime $q$ is adjoined, each old residue has $q$ lifts and two are deleted.
+\begin{proposition}[Survivor-count recursion]
+For the complete residue system,
+\begin{equation}
+S_q=(q-2)S_{q^-}.
+\end{equation}
+\end{proposition}
+The normalized density
+\begin{equation}
+\delta(z)=\prod_{3\le p\le z}\left(1-\frac2p\right)
+\end{equation}
+has zero average update defect over a complete residue block. The unresolved term is created when a moving observation interval cuts the block.
+
+\section{Square-horizon equivalence}
+A survivor $n$ at a sieve depth containing all primes up to $\sqrt{n+2}$ cannot be composite at either $n$ or $n+2$.
+\begin{proposition}[Square-horizon equivalence]
+Within the exact square-horizon window, an odd survivor is equivalent to a twin-prime pair.
+\end{proposition}
+\begin{proof}
+If $n$ were composite, it would have a prime divisor at most $\sqrt n$, which is in the sieve frontier; likewise for $n+2$. Survival excludes both possibilities. The converse is immediate.
+\end{proof}
+This is an exact reporter equivalence at the square horizon. It does not prove that the moving interval contains a survivor.
+
+\section{Moving-boundary flux}
+Decompose a finite interval into complete residue blocks and one boundary block. Complete blocks contribute their exact mean. All discrepancy is a signed flux through the moving boundary. The finite flux is additive under block coarsening and retains the orientation lost by unsigned local-density arguments.
+
+After divisor inversion, the count has the form
+\begin{equation}
+\mathcal T(X)=\mathcal M(X)+D_1(X)-D_0(X)+\mathcal E(X),
+\end{equation}
+where $\mathcal M$ is the controlled small-source term, $D_1-D_0$ is the coupled signed moving-boundary dispersion, and $\mathcal E$ is a controlled remainder.
+
+\begin{theorem}[Conditional quantitative closure]
+If
+\begin{equation}
+D_1(X)-D_0(X)=o(X)
+\end{equation}
+and the displayed remainder estimate holds uniformly on the declared square-horizon scale, then the survivor count has a positive Hardy-Littlewood-order main term and there are infinitely many twin primes.
+\end{theorem}
+\claimstatus{Conditional theorem. The signed dispersion estimate is the live unproved analytic statement.}
+
+\section{Prime-semiprime transition}
+At late sieve depth, a composite survivor below the square horizon has highly restricted factorization. The first unresolved composites are semiprimes whose factors lie beyond the current frontier. This produces a bilinear residual of schematic form
+\begin{equation}
+\mathcal B(X)=\sum_{m\le\sqrt X}\sum_{n\le X/m}a_mb_n
+\mathbf1_{mn+2\text{ survives}}-\text{local mean}.
+\end{equation}
+The coefficients are not arbitrary sieve weights; they are generated by the exact CRT recursion and the moving interval boundary.
+
+\section{First-deletion variable and path law}
+For a candidate $x$, let $\kappa_x$ be the first prime stage at which $x$ or $x+2$ is deleted, with $\kappa_x=\infty$ for a twin-prime pair. The finite path of survival/deletion records more than terminal admissibility. Comparing the empirical interval path to the complete CRT lift law produces a path-relative entropy. A positive divergence localizes where the moving integer interval departs from complete residue equilibrium.
+
+The path formulation does not remove the parity problem. Its value is diagnostic: it assigns the unresolved orientation to an explicit stage and block boundary instead of hiding it in a heuristic independence assumption.
+
+\section{Profinite and Fourier formulations}
+The inverse system of residue blocks defines a compact profinite carrier. The normalized survivor indicator is a cylinder function, and conditional expectation over successive prime stages gives a martingale on the complete CRT probability space. The actual moving interval is not a random sample from this measure; the required transfer is a discrepancy theorem between the interval occupation measure and the projective measure.
+
+Finite Fourier expansion on each residue block transfers the same obstruction into coherent near-resonant modes. Scarcity of exact resonances is insufficient: one must control the signed sum of all near-resonant contributions generated by the moving boundary.
+
+\section{Parity ledger}
+The Chen-Liouville identity and rough-fibre census separate prime and semiprime channels, but they do not by themselves force positive prime-pair occupation. Any proof must preserve the Mobius/Liouville orientation through the last estimate. Replacing signed terms by absolute values, probabilities, or an unsigned local admissibility product discards precisely the information needed to distinguish one prime from an almost-prime.
+
+\section{Failed closures retained}
+The following approaches were tested and found insufficient:
+\begin{enumerate}
+\item pointwise control of each residue class;
+\item treating normalized updates as a martingale without a probability law for the moving interval;
+\item generic large-sieve bounds that ignore generated signs;
+\item exact-resonance scarcity without coherent near-resonance control;
+\item replacing the moving boundary by complete residue blocks;
+\item ordinary sieve positivity that cannot cross the parity barrier.
+\end{enumerate}
+
+\section{What the paper establishes}
+The paper establishes the complete finite CRT recursion, exact square-horizon reporter, moving-boundary decomposition, parity-sensitive coefficient system, and a conditional theorem reducing twin-prime infinitude to one coupled signed dispersion estimate. It does not establish that estimate and therefore does not claim the Twin Prime Conjecture.
+
+\appendix
+\section{Specialist audit questions}
+\begin{enumerate}
+\item Is the coupled moving-boundary estimate equivalent to an existing dispersion criterion or strictly different?
+\item Can Type I/II bilinear forms preserve the generated orientation at square-horizon depth?
+\item Does the first-deletion/path-relative-entropy representation expose a known parity obstruction in a more tractable norm?
+\item Can near-resonant Fourier modes be controlled without assuming random prime residues?
+\end{enumerate}
+
+
+\section{Exact residue recursion}
+Let $P_z=\prod_{p\le z}p$. A residue $a\bmod P_z$ survives the twin sieve if
+\begin{equation}
+a\not\equiv0,-2\pmod p
+\end{equation}
+for every odd prime $p\le z$, with the standard adjustment at 2. On adjoining a new odd prime $p$, every old survivor has $p$ lifts and exactly two are deleted. Hence the abstract residue population obeys
+\begin{equation}
+S_p=(p-2)S_{p^-}.
+\end{equation}
+After normalization by $\prod_{3\le q\le p}(1-2/q)$, complete residue blocks have zero mean drift. The unresolved term is the signed discrepancy produced when the physical observation interval cuts a block.
+
+\section{Square-horizon theorem}
+If every prime $q\le\sqrt X$ has been sieved and $m\le X$ survives both residues, then neither $m$ nor $m+2$ has a prime divisor at most its square root. Except for the explicitly treated unit/boundary cases, each is prime. Conversely a twin-prime pair survives every such local deletion. Thus occupation of the moving interval after square-root depth is exactly the global target. Local admissibility alone does not guarantee such occupation.
+
+\section{Boundary-current decomposition}
+Write the physical interval as complete residue blocks plus one moving remainder. Complete blocks contribute their exact mean. The remainder can be expressed as activation and deletion flux across the moving boundary. After divisor and Mellin decompositions, the residual takes a bilinear form whose coefficients are not arbitrary: they are generated by the survivor recursion, M\"obius orientation, and the square-horizon boundary.
+
+A convenient status form is
+\begin{equation}
+\mathcal T(X)=\mathcal M(X)+D_0(X)+D_1(X)+\mathcal E(X),
+\end{equation}
+where $\mathcal M$ is the positive local main term, $D_0,D_1$ are signed orientation-sensitive dispersion modes, and $\mathcal E$ is the controlled remainder.
+
+\begin{theorem}[Conditional twin-prime closure]
+If
+\begin{equation}
+D_0(X)=o(X),\qquad D_1(X)=o(X),
+\end{equation}
+with the displayed coefficient system and moving boundary, then the positive survivor main term is not cancelled and infinitely many twin-prime representatives occur.
+\end{theorem}
+The theorem is an exact sufficient reduction. The two estimates remain live.
+
+\section{First deletion and path information}
+For each candidate pair, define the first prime stage at which either component is deleted. This variable records more than terminal survival: it determines a path through the nested CRT fibres. The empirical path law on integers and the uniform CRT path law can be compared by relative entropy. A proof programme may then seek divergence of cumulative hazard or a controlled likelihood ratio. No such information inequality is claimed complete here; it is retained as a distinct continuation rather than folded into the signed dispersion theorem.
+
+\section{Parity ledger and failed mechanisms}
+The following routes were tested and rejected as closures:
+\begin{enumerate}
+\item pointwise control of every residue class;
+\item treating the moving boundary as a probability-independent martingale;
+\item applying generic large-sieve estimates after discarding the generated signs;
+\item counting exact resonances while ignoring coherent near-resonance;
+\item replacing the moving interval by a complete block;
+\item using local survivor density as though it implied occupied square-horizon fibres.
+\end{enumerate}
+The failure record is part of the mathematics because it identifies precisely which information the live estimates must retain.
+
+\section{Reproducibility and honest title boundary}
+Finite verification checks lift counts, normalized block means, moving-boundary flux, divisor decomposition, activation receipts, and Fourier identities. No finite audit can establish infinitely many twin primes. The manuscript therefore presents a continuation system and an exact sufficient theorem, not a completed proof of the conjecture.
+
+\begin{thebibliography}{99}
+\bibitem{halberstam} H. Halberstam and H.-E. Richert, Sieve Methods, Academic Press, 1974.
+\bibitem{iwaniec} H. Iwaniec and E. Kowalski, Analytic Number Theory, American Mathematical Society, 2004.
+\bibitem{chen} J. R. Chen, On the representation of a large even integer as the sum of a prime and the product of at most two primes, Scientia Sinica 16 (1973), 157--176.
+\bibitem{maynard} J. Maynard, Small gaps between primes, Annals of Mathematics 181 (2015), 383--413.
+\bibitem{zhang} Y. Zhang, Bounded gaps between primes, Annals of Mathematics 179 (2014), 1121--1174.
+\end{thebibliography}
+\end{document}

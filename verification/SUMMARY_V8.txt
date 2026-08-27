@@ -1,0 +1,16 @@
+author: Abhijit Singh
+release: 8.0.2
+generated_at_utc: 2026-08-27T11:00:05.897453+00:00
+specialist_papers: 18
+atlas_units: 1
+individual_submission_packages: 19
+combined_pages: 200
+relation_cells: 36
+clean_source_compile: 19/19 PASS
+pdf_preflight: PASS
+visual_render: 200/200 pages
+state_transfer_tests: 22/22 PASS
+prime_observer_verifier: PASS
+restricted_terminology_audit: PASS
+author_and_affiliation_audit: PASS
+handwritten_source_separation: PASS - 0 raw note assets in academic/public release

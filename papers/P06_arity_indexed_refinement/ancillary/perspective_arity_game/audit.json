@@ -1,0 +1,140 @@
+{
+  "binary_presentation_fibers": [
+    {
+      "all_complete_binary_presentations_retained": true,
+      "complete_P1_binary_presentations_before_isomorphism": 15,
+      "complete_P1_binary_shadow_classes": 2,
+      "equal_depth_subview_shadow_classes": 1,
+      "event_horizon_P1_coordinate": 1,
+      "maximum_shadow_classes_over_one_native_class": 2,
+      "native_P4_classes": 1,
+      "native_classes_split_by_P1": 1,
+      "shadow_split_histogram": {
+        "2": 1
+      }
+    },
+    {
+      "all_complete_binary_presentations_retained": true,
+      "complete_P1_binary_presentations_before_isomorphism": 1125,
+      "complete_P1_binary_shadow_classes": 76,
+      "equal_depth_subview_shadow_classes": 9,
+      "event_horizon_P1_coordinate": 2,
+      "maximum_shadow_classes_over_one_native_class": 27,
+      "native_P4_classes": 5,
+      "native_classes_split_by_P1": 5,
+      "shadow_split_histogram": {
+        "10": 2,
+        "26": 1,
+        "27": 1,
+        "3": 1
+      }
+    },
+    {
+      "all_complete_binary_presentations_retained": true,
+      "complete_P1_binary_presentations_before_isomorphism": 101250,
+      "complete_P1_binary_shadow_classes": 8692,
+      "equal_depth_subview_shadow_classes": 140,
+      "event_horizon_P1_coordinate": 3,
+      "maximum_shadow_classes_over_one_native_class": 1053,
+      "native_P4_classes": 30,
+      "native_classes_split_by_P1": 30,
+      "shadow_split_histogram": {
+        "104": 1,
+        "1053": 1,
+        "129": 1,
+        "138": 1,
+        "168": 1,
+        "180": 1,
+        "183": 1,
+        "20": 3,
+        "204": 1,
+        "264": 1,
+        "288": 1,
+        "309": 1,
+        "315": 1,
+        "318": 1,
+        "4": 1,
+        "41": 1,
+        "471": 1,
+        "52": 1,
+        "54": 1,
+        "549": 1,
+        "558": 1,
+        "590": 1,
+        "621": 1,
+        "78": 1,
+        "873": 1,
+        "900": 1,
+        "92": 1,
+        "96": 1
+      }
+    }
+  ],
+  "isolated_event": {
+    "balanced_binary_hierarchy_automorphisms": 8,
+    "balanced_presentations": 3,
+    "complete_binary_presentations_retained": 15,
+    "interpretation": "every binary hierarchy inserts intermediate distinctions absent from atomic P4; all fifteen complete hierarchies are retained",
+    "native_P4_automorphisms_seen_by_P1": 24,
+    "unbalanced_binary_hierarchy_automorphisms": 2,
+    "unbalanced_presentations": 12
+  },
+  "native_P1_closure": {
+    "arity_P1_coordinate": 2,
+    "layers": [
+      {
+        "discarded_histories": 0,
+        "event_horizon_P1_coordinate": 1,
+        "native_incidence_classes": 1,
+        "raw_P1_histories": 1,
+        "source_histories_retained": 1
+      },
+      {
+        "discarded_histories": 0,
+        "event_horizon_P1_coordinate": 2,
+        "native_incidence_classes": 3,
+        "raw_P1_histories": 4,
+        "source_histories_retained": 4
+      },
+      {
+        "discarded_histories": 0,
+        "event_horizon_P1_coordinate": 3,
+        "native_incidence_classes": 8,
+        "raw_P1_histories": 29,
+        "source_histories_retained": 29
+      }
+    ]
+  },
+  "native_P4_closure": {
+    "arity_P1_coordinate": 4,
+    "layers": [
+      {
+        "discarded_histories": 0,
+        "event_horizon_P1_coordinate": 1,
+        "native_incidence_classes": 1,
+        "raw_P1_histories": 1,
+        "source_histories_retained": 1
+      },
+      {
+        "discarded_histories": 0,
+        "event_horizon_P1_coordinate": 2,
+        "native_incidence_classes": 5,
+        "raw_P1_histories": 16,
+        "source_histories_retained": 16
+      },
+      {
+        "discarded_histories": 0,
+        "event_horizon_P1_coordinate": 3,
+        "native_incidence_classes": 30,
+        "raw_P1_histories": 1041,
+        "source_histories_retained": 1041
+      }
+    ]
+  },
+  "semantic_index": {
+    "P0": "no distinction; not a program state",
+    "P1": "our native two-resultant distinction and all program notation",
+    "P4": "hypothetical atomic four-resultant distinction"
+  },
+  "status": "P1 audit; no claim of entering or reproducing P4"
+}

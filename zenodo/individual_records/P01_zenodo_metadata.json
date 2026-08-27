@@ -1,0 +1,22 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Singh, Abhijit"
+    }
+  ],
+  "description": "A finite source calculus is developed from one formal primitive: a distinction has a complete family of resultants, and every resultant may distinguish again. Finite unlabelled non-plane hierarchies retain containment, multiplicity, and complete resultant families. Complete recursive views and complete one-occurrence continuation decks reconstruct every finite source hierarchy. The central closure theorem characterizes exactly when a quotient reporter supports an autonomous continuation law: the complete reported response must be constant on every reporter fibre. Failure induces a least response-forced refinement; success implies stable blindness to every distinction erased by the quotient. The calculus further constructs least closed combinations of reporters, finite predictive quotients, target-free expansion systems, and common-source relations between incomparable perspectives. An occurrence-sensitive prime triad and its nine-state, thirty-six-relation realization are added as a concrete quotient-closure test.",
+  "keywords": [
+    "recursive distinction",
+    "predictive quotient",
+    "behavioural closure",
+    "finite reconstruction",
+    "reporter refinement"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-08-27",
+  "related_identifiers": [],
+  "resource_type": "publication-article",
+  "title": "Future-Complete Quotients and Recursive Distinction",
+  "version": "1.1.0"
+}

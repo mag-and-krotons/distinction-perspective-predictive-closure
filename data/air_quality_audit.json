@@ -1,0 +1,9 @@
+{
+  "raw_rows": 9471,
+  "nonblank_rows": 9357,
+  "blank_trailer_rows": 114,
+  "all_empty_columns": 2,
+  "numeric_channels": 13,
+  "sentinel_cells": 16701,
+  "complete_rows": 827
+}

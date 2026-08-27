@@ -1,0 +1,196 @@
+\pdfoutput=1
+\documentclass[11pt,a4paper]{article}
+\usepackage{abhijit-research}
+\renewcommand{\PaperCode}{P04}
+\renewcommand{\PaperKind}{RESEARCH PAPER}
+\renewcommand{\PaperVersion}{VERSION 1.0}
+\renewcommand{\PaperDate}{AUGUST 2026}
+\renewcommand{\PaperTitle}{Stochastic Frontier Information}
+\renewcommand{\PaperSubtitle}{Finite-Memory Dissipation and Cycle Holonomy}
+\renewcommand{\PaperFullTitle}{Stochastic Frontier Information, Finite-Memory Dissipation, and Cycle Holonomy}
+\renewcommand{\PaperShortTitle}{Stochastic Frontier Information}
+\renewcommand{\PaperKeywords}{conditional min-entropy; predictive refinement; Landauer principle; causal order; contextuality; recurrence}
+\renewcommand{\PaperClassification}{The finite information and holonomy statements are proved. Thermodynamic consequences require the displayed finite-memory and reset assumptions. The recurrence/accessibility phase diagram is a model calculus rather than an established universal physical law.}
+\renewcommand{\PaperCitation}{Singh, Abhijit. 2026. \textit{Stochastic Frontier Information, Finite-Memory Dissipation, and Cycle Holonomy}. Research manuscript, version 1.0.}
+\begin{document}
+\MakeResearchTitle
+\MakeResearchContents
+\MakeResearchAbstract{%
+A finite information measure is developed for distinctions newly revealed relative to a current reporter. Stochastic frontier information is the conditional min-entropy of a new mark given the existing report partition. On finite full-support carriers it is positive exactly when the mark causes a genuine partition refinement; for a uniform source an exact formula and a sharp lower bound in terms of combinatorial distinction gain are proved. A refinement/regraining entropy ledger yields a Landauer lower bound for sustained inquiry on finite cyclic memory. Independently, a cycle-holonomy theorem characterizes when local binary transition laws admit a global static valuation and when only a sequential occurrence index is consistent. Residual and accessibility exponents then separate dynamical instability from growth of inaccessible provenance.
+}
+\section{Finite inquiry frames}
+A finite inquiry frame is a triple
+\begin{equation}
+F=(S,Q,\mu),
+\end{equation}
+where $S$ is a finite carrier, $Q$ a family of executable questions, and $\mu$ a source distribution. Questions induce a partition of $S$: two source states are in one cell when all current questions return the same values. A new mark $r:S\to\mathcal R$ may refine that partition.
+
+\begin{definition}[Stochastic frontier information]
+Let $S^*\sim\mu$ and $[S^*]_Q$ be its current report cell. Define
+\begin{equation}
+\operatorname{SFI}_\mu(r\mid Q)
+=H_{\min}(r(S^*)\mid [S^*]_Q)
+=-\log_2\sum_C\mu(C)\max_b\Pr(r=b\mid C).
+\end{equation}
+\end{definition}
+This is the unpredictability of the new mark after every distinction decoded by the current reporter is known.
+
+For deterministic finite carriers, let $c_C$ be the number of nonempty $r$-fibres inside report cell $C$ and define
+\begin{equation}
+\Delta_Q(r)=\sum_C(c_C-1).
+\end{equation}
+
+\begin{theorem}[Deterministic reduction]
+If $\operatorname{supp}\mu=S$, then
+\begin{equation}
+\boxed{\operatorname{SFI}_\mu(r\mid Q)>0\iff\Delta_Q(r)>0.}
+\end{equation}
+\end{theorem}
+\begin{proof}
+If $\Delta_Q(r)=0$, $r$ is constant on every report cell and the conditional guessing probability is one. If a cell splits and every source state has positive probability, at least two mark values have positive conditional probability, so total optimal guessing probability is strictly below one.
+\end{proof}
+
+\section{Uniform exchange rate}
+Assume $|S|=N$ and $\mu$ uniform. Let $c_{\max}(C)$ be the largest $r$-fibre inside $C$.
+\begin{theorem}[Quantitative bridge]
+\begin{equation}
+\operatorname{SFI}(r\mid Q)=\log_2\frac{N}{\sum_Cc_{\max}(C)}
+\ge\log_2\frac{N}{N-\Delta_Q(r)}.
+\end{equation}
+Equality holds exactly when every split cell consists of one largest fibre and singleton residual fibres.
+\end{theorem}
+\begin{proof}
+Uniform conditioning gives $P_{\rm guess}=N^{-1}\sum_Cc_{\max}(C)$. Every nonmaximal fibre contains at least one element, so $c_{\max}(C)\le|C|-(c_C-1)$. Sum over cells.
+\end{proof}
+
+\section{Entropy ledger of a physical record}
+Let $L$ be a finite physical memory storing the current report label. Refinement by $r$ changes the Shannon entropy by
+\begin{equation}
+H(L,r)=H(L)+H(r\mid L).
+\end{equation}
+A regraining is a many-to-one map of labels.
+\begin{lemma}[Exact ledger]
+For any finite sequence of refinements and regrainings,
+\begin{equation}
+\sum_{\rm regrain}\Delta H_{\rm drop}
+=\sum_{\rm refine}H(r_i\mid L_i)-[H(L_f)-H(L_0)].
+\end{equation}
+\end{lemma}
+Assume a memory carrier with at most $N$ distinguishable states, a heat bath at temperature $T$, reversible use of blank space for refinements, and logically irreversible reset for regrainings.
+\begin{theorem}[Finite-memory dissipation floor]
+\begin{equation}
+\boxed{Q_{\rm diss}\ge k_BT\ln2\left[\sum_iH(r_i\mid L_i)-(\log_2N-H(L_0))\right].}
+\end{equation}
+If the average fresh conditional entropy is at least $h>0$ for $n$ steps, then
+\begin{equation}
+Q_{\rm diss}\ge k_BT\ln2\,[nh-\log_2N+H(L_0)].
+\end{equation}
+\end{theorem}
+The heat statement is conditional on a physical cyclic reset. A formal residual alone has no automatic thermodynamic price.
+
+\section{Cycle holonomy}
+Consider binary variables $x_1,\ldots,x_n\in\{\pm1\}$ with local laws
+\begin{equation}
+x_{i+1}=s_ix_i,\qquad s_i\in\{\pm1\},
+\end{equation}
+with cyclic indexing.
+\begin{theorem}[Cycle holonomy]
+A global static valuation exists if and only if
+\begin{equation}
+\prod_{i=1}^ns_i=+1.
+\end{equation}
+If the product is $-1$, no static assignment satisfies all local laws, but sequential propagation is total and one loop implements $x\mapsto-x$.
+\end{theorem}
+\begin{proof}
+Multiplication of all local equations cancels every variable and gives the necessary condition. If the product is positive, choose $x_1$ and propagate consistently. If negative, propagation still defines every next value but returns the opposite starting value after one loop.
+\end{proof}
+The three-cycle with all $s_i=-1$ has zero valid global assignments among eight. The sequential value alternates on successive loops. This is a combinatorial contextual support model; it is not by itself a quantum-realizable triangle correlation.
+
+\section{Recurrence and accessibility exponents}
+A residual propagated by a cocycle $G_{0:n}$ has exponential rate
+\begin{equation}
+\chi(B_0)=\limsup_n\frac{\log\|G_{0:n}B_0\|-\log\|B_0\|}{\tau_n-\tau_0}.
+\end{equation}
+An independent accessibility exponent can be assigned to the growth of observationally indistinguishable provenance,
+\begin{equation}
+\eta=\limsup_{\tau\to\infty}\frac1\tau\log \mu([F]_{\Lambda(B_\tau)}).
+\end{equation}
+The pair $(\chi,\eta)$ separates at least four regimes: assimilation with bounded hidden multiplicity; local relaxation with growing inaccessible provenance; critical recurrence with increasing hidden correlation; and proliferating residuals requiring a larger state description. The second coordinate prevents one exponent from being forced to represent both instability and inaccessibility.
+
+\section{Finite verification}
+The supplied audit reports:
+\begin{itemize}
+\item 400 random frames satisfying the deterministic equivalence and uniform inequality;
+\item 150 cases attaining the equality condition;
+\item 200 random refinement/regraining protocols satisfying the entropy ledger;
+\item exhaustive cycle-holonomy verification for $n=3,4,5,6$ over all sign patterns;
+\item zero valid global sections for the all-negative three-cycle.
+\end{itemize}
+These finite checks support the implementation and examples; the finite theorems are proved analytically above.
+
+\section{Scope}
+Information is a future-relevant distinction. Causal order is a dependency relation. Duration requires a clock. Dissipation requires a physical memory and reset protocol. The equations relate these objects without reducing every temporal asymmetry to heat or every form of information to min-entropy.
+
+
+\section{Detailed proof of the uniform exchange law}
+Let the current reporter partition a uniform carrier $S$ of size $N$ into cells $C$. A fresh mark $r$ divides cell $C$ into nonempty fibres; let $c_{\max}(C)$ be the largest fibre. Conditional optimal guessing gives
+\begin{equation}
+P_{\rm guess}(r\mid Q)=\sum_C\frac{|C|}{N}\frac{c_{\max}(C)}{|C|}
+=\frac1N\sum_Cc_{\max}(C),
+\end{equation}
+so
+\begin{equation}
+\operatorname{SFI}(r\mid Q)=\log_2\frac{N}{\sum_Cc_{\max}(C)}.
+\end{equation}
+If $c_C$ is the number of nonempty fresh fibres in $C$, then every nonmaximal fibre contains at least one element and
+\begin{equation}
+c_{\max}(C)\le |C|-(c_C-1).
+\end{equation}
+Summing yields
+\begin{equation}
+\operatorname{SFI}(r\mid Q)\ge
+\log_2\frac{N}{N-\Delta_Q(r)},
+\qquad \Delta_Q(r)=\sum_C(c_C-1).
+\end{equation}
+Equality holds exactly when every nonmaximal fresh fibre is a singleton. The theorem therefore identifies the exact loss in replacing a probabilistic source by a combinatorial split count.
+
+\section{Worked finite examples}
+If one four-element report cell is split into two fibres of sizes two and two, then $P_{\rm guess}=1/2$ and SFI is one bit, while $\Delta=1$. If it is split into sizes three and one, then $P_{\rm guess}=3/4$ and SFI is $-\log_2(3/4)$; the same combinatorial distinction gain carries less guessing information. If two cells are split under nonuniform source mass, the largest conditional fibre must be weighted by the mass of its parent cell; cardinality alone is insufficient.
+
+\section{Entropy ledger and physical assumptions}
+Let $L_i$ be the physical record label before fresh mark $r_i$. A logically reversible refinement writes $(L_i,r_i)$ and increases Shannon entropy by
+\begin{equation}
+H(L_i,r_i)-H(L_i)=H(r_i\mid L_i).
+\end{equation}
+A regraining is a many-to-one map of labels and decreases record entropy. Telescoping every increase and decrease gives
+\begin{equation}
+\sum_{\rm regrain}\Delta H_{\rm drop}
+=\sum_{\rm refine}H(r_i\mid L_i)-[H(L_f)-H(L_0)].
+\end{equation}
+If the physical carrier has at most $N$ reliably distinguishable states, $H(L_f)\le\log_2N$. Under a cyclic reset implemented against a bath at temperature $T$,
+\begin{equation}
+Q_{\rm diss}\ge k_BT\ln2\left[
+\sum_iH(r_i\mid L_i)-(\log_2N-H(L_0))
+\right].
+\end{equation}
+The result requires a finite memory, a reset operation, and the standard thermodynamic implementation assumptions. It is not a claim that causal order itself is created by heat dissipation.
+
+\section{Cycle holonomy in full}
+For local binary laws $x_{i+1}=s_ix_i$ on a cycle, multiply all equations. Every $x_i$ appears on both sides, leaving the necessary condition $\prod_i s_i=1$. If it holds, choose $x_1$ arbitrarily and propagate to obtain a global assignment. If it fails, local propagation remains total but one circuit sends
+\begin{equation}
+x_1\longmapsto\left(\prod_i s_i\right)x_1=-x_1.
+\end{equation}
+The system therefore requires an occurrence index: the same local question alternates on successive loops. The three-cycle with every $s_i=-1$ has no global assignment among its eight possibilities and alternates exactly under passage. It is a combinatorial contextual model; additional constraints are required for quantum realizability.
+
+\section{Verification and extensions}
+The finite audit checked 400 random frames for the positivity equivalence and quantitative inequality, including 150 equality cases; 200 random refine/merge protocols for the entropy ledger; and every sign pattern for cycles of lengths three through six. Live extensions are a sharp nonuniform-source inequality, finite-size thermodynamic corrections, and a characterization of which holonomy structures admit quantum rather than merely no-signalling realization.
+
+\begin{thebibliography}{99}
+\bibitem{landauer} R. Landauer, Irreversibility and heat generation in the computing process, IBM Journal of Research and Development 5 (1961), 183--191.
+\bibitem{bennett} C. H. Bennett, The thermodynamics of computation: a review, International Journal of Theoretical Physics 21 (1982), 905--940.
+\bibitem{reeb} D. Reeb and M. M. Wolf, An improved Landauer principle with finite-size corrections, New Journal of Physics 16 (2014), 103011.
+\bibitem{still} S. Still, D. A. Sivak, A. J. Bell, and G. E. Crooks, Thermodynamics of prediction, Physical Review Letters 109 (2012), 120604.
+\bibitem{abramsky} S. Abramsky and A. Brandenburger, The sheaf-theoretic structure of non-locality and contextuality, New Journal of Physics 13 (2011), 113036.
+\bibitem{liang} Y.-C. Liang, R. W. Spekkens, and H. M. Wiseman, Specker's parable of the overprotective seer, Physics Reports 506 (2011), 1--39.
+\end{thebibliography}
+\end{document}

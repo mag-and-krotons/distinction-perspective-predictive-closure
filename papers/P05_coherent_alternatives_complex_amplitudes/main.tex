@@ -1,0 +1,237 @@
+\pdfoutput=1
+\documentclass[11pt,a4paper]{article}
+\usepackage{abhijit-research}
+\renewcommand{\PaperCode}{P05}
+\renewcommand{\PaperKind}{RESEARCH PAPER}
+\renewcommand{\PaperVersion}{VERSION 1.1}
+\renewcommand{\PaperDate}{AUGUST 2026}
+\renewcommand{\PaperTitle}{Coherent Alternatives}
+\renewcommand{\PaperSubtitle}{Complex Amplitudes and Marked Quantum Dynamics}
+\renewcommand{\PaperFullTitle}{Coherent Alternatives, Complex Amplitudes, and Marked Quantum Dynamics}
+\renewcommand{\PaperShortTitle}{Coherent Alternatives}
+\renewcommand{\PaperKeywords}{quantum foundations; complex amplitudes; probability rule; unitary dynamics; quantum instruments; causal order}
+\renewcommand{\PaperClassification}{Every theorem is conditional on the displayed operational or continuum assumptions. The paper does not claim a completed microscopic theory of nature or numerical derivation of physical constants.}
+\renewcommand{\PaperCitation}{Singh, Abhijit. 2026. \textit{Coherent Alternatives, Complex Amplitudes, and Marked Quantum Dynamics}. Research manuscript, version 1.0.}
+\begin{document}
+\MakeResearchTitle
+\MakeResearchContents
+\MakeResearchAbstract{%
+A direct operational route is given from coherent unresolved alternatives to the minimal complex carrier, quadratic outcome weights, reversible unitary dynamics, and complete measurement instruments. A faithful minimal continuous periodic return acts on a real rotation plane, generating the complex unit as an oriented quarter-turn. Translation-invariant area on that plane forces the weight $|z|^2$ and hence the normalized probability rule. Reversible weight-preserving transformations are unitary; differentiable return chains obey Schrodinger form; commuting local operations on a finite causal partial order are slicing independent. Recorded outcomes are treated as instruments containing both probability and successor state. Unread local operations preserve distant marginals and sharp dephasing cannot lower entropy. Under continuum regularity, causal order plus event volume determines Lorentzian geometry. The finite nine-state carrier supplies four commuting return planes and a scoped mathematical quantum-number interpretation.
+}
+\section{Operational starting point}
+The primitive operational data are finite histories, admissible continuations, and open alternatives sharing the same input and output boundary. A present state is not assumed to be fundamental; it is the quotient of histories that have the same future behaviour for the declared continuation family.
+
+\begin{definition}[Future equivalence]
+For histories $h,h'$ and interventions $\Lambda$,
+\begin{equation}
+h\sim_\Lambda h'\iff
+P(Y_{1:H}\mid\operatorname{do}(\lambda),h)
+=P(Y_{1:H}\mid\operatorname{do}(\lambda),h')
+\quad(\lambda\in\Lambda).
+\end{equation}
+\end{definition}
+If a new operation separates histories previously merged, the old state space is incomplete for the enlarged experiment.
+
+\section{Coherent alternatives}
+Consider unresolved routes with one common boundary. Assume:
+\begin{enumerate}
+\item a faithful finite-dimensional continuous real representation;
+\item addition for unresolved alternatives and bilinear sequential composition;
+\item nontrivial cancellation upon recombination;
+\item a minimal irreducible continuous periodic return group;
+\item a common inner product preserved by unmarked return.
+\end{enumerate}
+These assumptions do not insert complex numbers, probabilities, Hilbert space, or a balanced splitter.
+
+\begin{theorem}[Minimal phase carrier]
+The minimal nontrivial carrier is a real two-dimensional rotation plane. In an oriented orthonormal basis,
+\begin{equation}
+J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad J^2=-I,\qquad R_\theta=e^{\theta J}.
+\end{equation}
+It is isomorphic to one complex dimension, up to reversal of orientation.
+\end{theorem}
+\begin{proof}
+Average any positive definite inner product over the compact return group, making the representation orthogonal. A continuous faithful circle action is trivial in one real dimension. The generator of an orthogonal one-parameter group is skew-symmetric and decomposes into two-dimensional rotation blocks and a zero block. Minimality and irreducibility remove the zero block and all but one rotation block; faithfulness fixes winding number $\pm1$.
+\end{proof}
+The imaginary unit is therefore the oriented quarter-turn of the minimal coherent cell.
+
+\section{Translation-invariant measure and the square law}
+Let $V\cong\R^2$ carry a nonzero locally finite translation-invariant Borel measure $\lambda$. Such a measure is unique up to scale and is ordinary area. A complex coefficient $z=a+ib$ acts by
+\begin{equation}
+M_z=\begin{pmatrix}a&-b\\b&a\end{pmatrix}.
+\end{equation}
+Define the weight by equal-cell scaling,
+\begin{equation}
+w(z)=\frac{\lambda(M_zA)}{\lambda(A)},\qquad0<\lambda(A)<\infty.
+\end{equation}
+
+\begin{theorem}[Quadratic actualization weight]
+\begin{equation}
+\boxed{w(z)=|z|^2.}
+\end{equation}
+For mutually recorded alternatives $z_1,\ldots,z_n$,
+\begin{equation}
+\boxed{P(j)=\frac{|z_j|^2}{\sum_k|z_k|^2}.}
+\end{equation}
+\end{theorem}
+\begin{proof}
+A real linear map scales translation-invariant area by the absolute determinant. Here $\det M_z=a^2+b^2$. Recorded alternatives occupy disjoint terminal sectors, so their weights add and normalization gives the second formula.
+\end{proof}
+
+\begin{corollary}[Balanced splitter]
+Two exchange-symmetric alternatives have equal modulus $r$ and satisfy $2r^2=1$, hence $r=1/\sqrt2$.
+\end{corollary}
+The balanced coefficient is therefore a consequence rather than an input.
+
+\section{Finite complex kinematics}
+For $n$ mutually recorded alternatives the carrier is $\C^n$ with norm $\|\psi\|^2=\sum_j|z_j|^2$. A reversible complex-linear transformation preserving this weight for every state is unitary.
+
+Let $U(\tau)$ be a differentiable one-parameter unitary group. Then
+\begin{equation}
+U(\tau)=e^{-iH\tau},\qquad i\frac{d\psi}{d\tau}=H\psi,
+\end{equation}
+for Hermitian $H$. The parameter $\tau$ compares repeatable local return processes; it need not be an external universal clock.
+
+\section{Causal partial order and slicing independence}
+Let $(E,\prec)$ be a finite causal partial order and attach a local transformation $T_e$ to each event. For a linear extension $L=(e_1,\ldots,e_N)$, let $T_L=T_{e_N}\cdots T_{e_1}$.
+\begin{theorem}[Foliation independence]
+If
+\begin{equation}
+e\parallel f\Longrightarrow T_eT_f=T_fT_e,
+\end{equation}
+then every linear extension of the same finite partial order yields the same total transformation.
+\end{theorem}
+\begin{proof}
+Any two finite linear extensions are connected by adjacent swaps of incomparable elements. Each swap preserves the product.
+\end{proof}
+The written global order is therefore bookkeeping; causal precedence and local return phases provide the physical temporal structure.
+
+\section{Marked quantum instruments}
+For orthogonal projectors $P_j$ with $\sum_jP_j=I$, a coherent system-record coupling is
+\begin{equation}
+V\psi=\sum_j|j\rangle_M\otimes P_j\psi,\qquad V^\dagger V=I.
+\end{equation}
+A recorded outcome is the instrument
+\begin{equation}
+\mathcal I_j(\rho)=P_j\rho P_j,
+\end{equation}
+with
+\begin{equation}
+p_j=\Tr(P_j\rho),\qquad \rho'_j=\frac{P_j\rho P_j}{p_j}.
+\end{equation}
+If the mark is unavailable, the successor is the dephased state
+\begin{equation}
+\mathcal D(\rho)=\sum_jP_j\rho P_j.
+\end{equation}
+The outcome and successor state belong to one operation.
+
+\section{Locality and entropy}
+For every local trace-preserving map $\Phi_A$,
+\begin{equation}
+\Tr_A[(\Phi_A\otimes I_B)(\rho_{AB})]=\Tr_A\rho_{AB}.
+\end{equation}
+An unread local operation cannot signal to a distant subsystem. Conditional remote states may differ after classical comparison of records, but the local marginal does not.
+
+The sharp unread channel is a random-unitary average over phase operators, so
+\begin{equation}
+S(\mathcal D\rho)\ge S(\rho),
+\end{equation}
+and
+\begin{equation}
+S(\mathcal D\rho)-S(\rho)=D(\rho\|\mathcal D\rho)\ge0.
+\end{equation}
+This quantifies coherence removed from sector-preserving future operations.
+
+\section{Causal geometry from order and measure}
+Suppose a dense regime admits a strongly causal smooth continuum representation. Causal order determines the conformal light-cone structure. A locally finite event-volume measure fixes the conformal scale. Under these explicit regularity assumptions,
+\begin{equation}
+(\text{causal order},\text{event volume})\longrightarrow(M,g_{\mu\nu}).
+\end{equation}
+The statement is a conditional representation theorem, not a proof that every finite event network converges to a smooth spacetime.
+
+\section{Current-totality obstruction}
+Let $H$ be an open macro-operation and $dH$ the completed record produced when it closes. Acyclic causal dependence forbids $dH$ from participating in the production of the identical token closure. A usable description of the completed whole is therefore either partial, produced by a proper suboperation while $H$ remains open, or late, participating in a successor operation. This is a token-causal statement, not a prohibition on later complete records.
+
+\section{Finite spectral labels on the nine-state relation carrier}
+The nine-state prime-observer carrier admits a conditional finite spectral representation. Let
+\begin{equation}
+\mathcal H_A=\mathbb C|1,0\rangle\oplus\bigoplus_{q\in\{2,3,5,7\},\ \varepsilon=\pm1}\mathbb C|q,\varepsilon\rangle.
+\end{equation}
+The commuting operators
+\begin{equation}
+\widehat Q|q,\varepsilon\rangle=q|q,\varepsilon\rangle,
+\qquad
+\widehat S|q,\varepsilon\rangle=\varepsilon|q,\varepsilon\rangle
+\end{equation}
+provide complete joint labels. The oriented pair-relation space has dimension
+\begin{equation}
+\dim\bigwedge^2\mathbb R^9=36.
+\end{equation}
+Four antisymmetric generators exchange the disjoint pairs $(2,9)$, $(3,8)$, $(5,6)$, and $(7,4)$ and commute because their two-planes are disjoint.
+
+This establishes a mathematically legitimate quantum-number interpretation: the labels are joint eigenvalues of commuting operators. It does not establish that a physical system realizes these observables, that the full relation algebra is a gauge symmetry, or that the decimal harmonic scale is fundamental. A physical claim requires an independently specified preparation, instrument, transition Hamiltonian, and held-out measurement.
+
+\section{Scope and falsification}
+The derivation is conditional on the operational assumptions stated in Section 2. It establishes a constructive route to the complex carrier, the quadratic weight, unitary dynamics, complete instruments, no-signalling, and conditional causal geometry. It does not derive the observed value of $\hbar$, the Standard Model, gravitational coupling, or a unique microscopic theory of spacetime. The programme fails if a smaller faithful continuous coherent carrier exists, if equal-cell translation-invariant measure scales by another exponent, or if the representation assumptions admit physically relevant noncomplex alternatives without an independent selection principle.
+
+
+\section{Dependency graph of the reconstruction}
+The constructive route is
+\begin{equation}
+\text{continuous coherent return}
+\Rightarrow \R^2\text{ rotation cell}
+\Rightarrow \C
+\Rightarrow |z|^2\text{ area scaling}
+\Rightarrow \text{unitary reversible dynamics}.
+\end{equation}
+Each arrow has an explicit assumption. A faithful periodic action is required for the rotation cell; irreducibility and minimality exclude direct sums; translation invariance and local finiteness select area measure; complex linearity and norm preservation select unitarity. The derivation does not establish that every generalized probabilistic theory must satisfy those assumptions.
+
+\section{Detailed Haar--Born proof}
+Let $z=a+ib$ act on the real phase plane by
+\begin{equation}
+M_z=\begin{pmatrix}a&-b\\b&a\end{pmatrix}.
+\end{equation}
+Every nonzero locally finite translation-invariant Borel measure on $\R^2$ is a constant multiple of Lebesgue area. Real linear maps scale that measure by absolute determinant, and
+\begin{equation}
+|\det M_z|=a^2+b^2=|z|^2.
+\end{equation}
+For disjoint recorded alternatives, areas add. Thus normalization yields the squared-modulus rule. The balanced splitter follows rather than being inserted: exchange symmetry gives equal modulus $r$ and $2r^2=1$.
+
+\section{Finite-dimensional extension}
+For $n$ mutually recorded alternatives, the carrier is $\C^n$ with weight $\|\psi\|^2$. A reversible complex-linear map preserving this weight for every $\psi$ satisfies $U^\dagger U=I$. A differentiable one-parameter group is generated by a Hermitian operator:
+\begin{equation}
+U(\tau)=e^{-iH\tau},\qquad i\frac{d\psi}{d\tau}=H\psi.
+\end{equation}
+The parameter $\tau$ is calibrated by repeatable physical returns. A numerical value of the action scale is not derived from dimensionless algebra.
+
+\section{Complete measurement operation}
+For orthogonal projectors $\{P_j\}$, the isometry
+\begin{equation}
+V\psi=\sum_j|j\rangle_M\otimes P_j\psi
+\end{equation}
+represents coherent system-record coupling. Actual record $j$ has weight $\|P_j\psi\|^2$ and conditional successor $P_j\psi/\|P_j\psi\|$. If the record is unavailable, the correct successor is the dephased density operator $\sum_jP_j\rho P_j$. This unifies outcome and successor state and avoids comparing two marginals as though they were independent physical sectors.
+
+\section{Locality, entropy, and causal order}
+For any trace-preserving local operation $\Phi_A$,
+\begin{equation}
+\Tr_A[(\Phi_A\otimes I_B)(\rho_{AB})]=\Tr_A\rho_{AB},
+\end{equation}
+so an unread local record cannot signal. Sharp dephasing is a random-unitary average and
+\begin{equation}
+S(\mathcal D\rho)-S(\rho)=D(\rho\|\mathcal D\rho)\ge0.
+\end{equation}
+For a finite causal partial order, commuting maps at incomparable events make every linear extension produce the same total operation. Under strong causality and continuum regularity, order fixes conformal Lorentzian geometry and event volume fixes scale.
+
+\section{Uniqueness and falsification obligations}
+The programme is weakened or rejected if a one-dimensional real faithful continuous carrier exists; if another locally finite translation-invariant phase measure gives a different weight; if the same operational assumptions admit inequivalent noncomplex composition; or if a claimed complete instrument cannot reproduce its own outcome and successor-state statistics. These are mathematical and experimental checks, not appeals to interpretive preference.
+
+\begin{thebibliography}{99}
+\bibitem{haar} G. B. Folland, A Course in Abstract Harmonic Analysis, CRC Press, 2016.
+\bibitem{stone} M. H. Stone, On one-parameter unitary groups in Hilbert space, Annals of Mathematics 33 (1932), 643--648.
+\bibitem{kraus} K. Kraus, States, Effects, and Operations, Springer, 1983.
+\bibitem{nielsen} M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2010.
+\bibitem{malament} D. Malament, The class of continuous timelike curves determines the topology of spacetime, Journal of Mathematical Physics 18 (1977), 1399--1404.
+\bibitem{hkm} S. Hawking, A. King, and P. McCarthy, A new topology for curved space-time, Journal of Mathematical Physics 17 (1976), 174--181.
+\bibitem{sorkin} R. D. Sorkin, Causal sets: discrete gravity, in Lectures on Quantum Gravity, Springer, 2005.
+\end{thebibliography}
+\end{document}

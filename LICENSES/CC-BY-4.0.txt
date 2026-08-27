@@ -1,0 +1,9 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The manuscripts, original figures, author-created tables, and project documentation in this release may be shared and adapted for any purpose, provided appropriate credit is given, a link to the license is supplied, and changes are indicated.
+
+Official license text:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution:
+Abhijit Singh, 2026.

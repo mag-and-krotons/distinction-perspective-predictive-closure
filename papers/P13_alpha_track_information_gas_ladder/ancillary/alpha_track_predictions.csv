@@ -1,0 +1,4 @@
+gas,predicted_kinks_per_track,ratio_low_vs_air,ratio_high_vs_air
+helium,0.19,0.16,0.21
+air,0.95,1,1
+argon,6.1,4.3,6.4

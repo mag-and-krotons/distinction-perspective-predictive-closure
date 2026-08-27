@@ -1,0 +1,9 @@
+{
+  "all_finite_products_match_identity_signs": true,
+  "analytic_law": "T is holomorphic and nonzero for |z|<1; the unit circle is a natural boundary because radial zeros occur at every dyadic root",
+  "binary_self_similarity_verified": true,
+  "generated_product": "T(z)=product_{j>=0}(1-z^(2^j))",
+  "generated_recursion": "T(z)=(1-z)T(z^2)",
+  "max_bits_audited": 14,
+  "status": "ordinary P1 carrier of the complete power-of-two capacity signature; one identity seed retained explicitly"
+}
