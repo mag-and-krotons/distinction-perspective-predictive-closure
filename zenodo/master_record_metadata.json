@@ -5,13 +5,16 @@
       "name": "Singh, Abhijit"
     }
   ],
-  "description": "A versioned research release containing 18 specialist papers, one scientific atlas, individual submission packages, data, verification code, theorem and correction ledgers, and source archives. Release 8.0.2 preserves the academic-source separation completed in 8.0.1 and corrects Git-canonical checksums, publication metadata, and clean-clone verification. The formal prime-observer theorem remains fully typeset and supported by formal diagrams, tables, code, and data.",
+  "description": "I present a cumulative research programme on distinction, perspective, predictive closure, representation genesis, quantum instruments, prime arity, and recurrence. This complete release brings together eighteen specialist papers and one scientific atlas as a two-hundred-page research series, with individual submission packages, data, figures, formal derivations, executable audits, and provenance ledgers. Its central constructions include the occurrence-sensitive prime triad, the nine-state / thirty-six-relation prime-observer closure theorem, transparent-prime sector labels, a scoped quantum-number interpretation, the repdigit terminal lattice, and the corrected all-prime Möbius predictive quotient. Definitions, results proved within the formalism, representations, numerical checks, physical hypotheses, and open questions are kept explicitly distinct.",
   "keywords": [
     "distinction",
+    "perspective",
     "predictive closure",
+    "recursive distinction",
     "quantum instruments",
-    "prime arity",
     "representation genesis",
+    "prime arity",
+    "relation closure",
     "recurrence exponent",
     "source-closed arithmetic"
   ],
@@ -20,7 +23,7 @@
     "MIT"
   ],
   "publication_date": "2026-08-27",
-  "record_creation_mode": "manual-ui-template",
+  "record_creation_mode": "linked-github-release",
   "related_identifiers": [
     {
       "identifier": "https://github.com/mag-and-krotons/distinction-perspective-predictive-closure",

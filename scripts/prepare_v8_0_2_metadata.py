@@ -12,9 +12,13 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE = "8.0.2"
-SOURCE_TITLE = (
+RESEARCH_TITLE = (
     "Distinction, Perspective, and Predictive Closure: "
-    "Source and Reproducibility Repository"
+    "Complete Research Release 8.0.2"
+)
+CODE_TITLE = (
+    "Distinction, Perspective, and Predictive Closure: "
+    "Research Verification Code and Source Packages"
 )
 
 EQUATIONS = {
@@ -67,17 +71,19 @@ def replace_equations(text: str, values: list[str], label: str) -> str:
 def update_primary_metadata() -> None:
     zenodo_path = ROOT / ".zenodo.json"
     zenodo = json.loads(zenodo_path.read_text(encoding="utf-8"))
-    zenodo["title"] = SOURCE_TITLE
+    zenodo["title"] = RESEARCH_TITLE
+    zenodo["upload_type"] = "publication"
+    zenodo["publication_type"] = "other"
     zenodo["version"] = RELEASE
     dump_json(zenodo_path, zenodo)
 
     citation_path = ROOT / "CITATION.cff"
     citation = yaml.safe_load(citation_path.read_text(encoding="utf-8")) or {}
-    citation["title"] = SOURCE_TITLE
+    citation["title"] = RESEARCH_TITLE
     citation["version"] = RELEASE
     citation["preferred-citation"] = {
         "type": "generic",
-        "title": SOURCE_TITLE,
+        "title": RESEARCH_TITLE,
         "authors": [{"family-names": "Singh", "given-names": "Abhijit"}],
         "year": 2026,
     }
@@ -89,13 +95,13 @@ def update_primary_metadata() -> None:
 
     codemeta_path = ROOT / "codemeta.json"
     codemeta = json.loads(codemeta_path.read_text(encoding="utf-8"))
-    codemeta["name"] = SOURCE_TITLE
+    codemeta["name"] = CODE_TITLE
     codemeta["version"] = RELEASE
     dump_json(codemeta_path, codemeta)
 
     bib_path = ROOT / "citation.bib"
     bib = bib_path.read_text(encoding="utf-8")
-    bib = re.sub(r"title\s*=\s*\{[^}]*\}", f"title = {{{SOURCE_TITLE}}}", bib)
+    bib = re.sub(r"title\s*=\s*\{[^}]*\}", f"title = {{{RESEARCH_TITLE}}}", bib)
     bib = re.sub(r",?\n\s*note\s*=\s*\{Zenodo DOI to be assigned\}", "", bib)
     bib_path.write_text(bib, encoding="utf-8", newline="\n")
 
@@ -104,9 +110,9 @@ def update_primary_metadata() -> None:
     release_info["release"] = RELEASE
     release_info["tag"] = f"v{RELEASE}"
     release_info["history"] = (
-        "Clean single-commit public history. Release 8.0.2 preserves the "
-        "academic-source separation of 8.0.1 and repairs Git-canonical "
-        "checksums, publication metadata, and verification coverage."
+        "I publish the complete research programme with its formal papers, "
+        "scientific atlas, data, executable audits, source packages, and "
+        "provenance ledgers."
     )
     dump_json(release_info_path, release_info)
 
@@ -153,7 +159,7 @@ def clear_unassigned_dois() -> None:
     if "RESERVE_ON_ZENODO" in str(master.get("doi", "")):
         master.pop("doi", None)
     master["version"] = RELEASE
-    master["record_creation_mode"] = "manual-ui-template"
+    master["record_creation_mode"] = "linked-github-release"
     master["title"] = (
         "Distinction, Perspective, and Predictive Closure: "
         f"Complete Research Release {RELEASE}"

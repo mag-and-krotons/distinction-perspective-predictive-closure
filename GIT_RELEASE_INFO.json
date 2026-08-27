@@ -1,7 +1,7 @@
 {
   "author": "Abhijit Singh",
   "branch": "main",
-  "history": "Clean single-commit public history. Release 8.0.2 preserves the academic-source separation of 8.0.1 and repairs Git-canonical checksums, publication metadata, and verification coverage.",
+  "history": "I publish the complete research programme with its formal papers, scientific atlas, data, executable audits, source packages, and provenance ledgers.",
   "release": "8.0.2",
   "repository_url": "https://github.com/mag-and-krotons/distinction-perspective-predictive-closure",
   "tag": "v8.0.2"

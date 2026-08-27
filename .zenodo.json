@@ -5,27 +5,30 @@
       "name": "Singh, Abhijit"
     }
   ],
-  "description": "Source repository for the individually compilable research papers, data, verification code, and theorem ledgers. Project-created code is additionally licensed under MIT; third-party materials retain their original terms.",
+  "description": "I present a cumulative research programme on distinction, perspective, predictive closure, representation genesis, quantum instruments, prime arity, and recurrence. This complete release brings together eighteen specialist papers and one scientific atlas as a two-hundred-page research series, with individual submission packages, data, figures, formal derivations, executable audits, and provenance ledgers. Its central constructions include the occurrence-sensitive prime triad, the nine-state / thirty-six-relation prime-observer closure theorem, transparent-prime sector labels, a scoped quantum-number interpretation, the repdigit terminal lattice, and the corrected all-prime Möbius predictive quotient. Definitions, results proved within the formalism, representations, numerical checks, physical hypotheses, and open questions are kept explicitly distinct.",
   "keywords": [
-    "predictive quotient",
+    "distinction",
+    "perspective",
+    "predictive closure",
     "recursive distinction",
     "quantum instruments",
-    "representation repair",
+    "representation genesis",
     "prime arity",
     "relation closure",
     "recurrence exponent",
-    "reproducibility"
+    "source-closed arithmetic"
   ],
   "language": "eng",
   "license": "cc-by-4.0",
+  "publication_type": "other",
   "related_identifiers": [
     {
       "identifier": "https://github.com/mag-and-krotons/distinction-perspective-predictive-closure",
-      "relation": "isSupplementTo",
+      "relation": "isSupplementedBy",
       "scheme": "url"
     }
   ],
-  "title": "Distinction, Perspective, and Predictive Closure: Source and Reproducibility Repository",
-  "upload_type": "software",
+  "title": "Distinction, Perspective, and Predictive Closure: Complete Research Release 8.0.2",
+  "upload_type": "publication",
   "version": "8.0.2"
 }

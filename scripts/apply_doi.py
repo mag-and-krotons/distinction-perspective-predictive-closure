@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply the DOI assigned to this source/reproducibility Git release."""
+"""Apply the DOI assigned to the complete research release."""
 
 from pathlib import Path
 import json
@@ -51,7 +51,8 @@ marker = f"**Zenodo DOI:** [{doi}](https://doi.org/{doi})"
 if "**Zenodo DOI:**" in readme:
     readme = re.sub(r"\*\*Zenodo DOI:\*\*.*", marker, readme)
 else:
-    readme = readme.replace("**Date:** 27 August 2026", f"**Date:** 27 August 2026  \n{marker}")
+    heading = "**Complete Research Release 8.0.2 — 27 August 2026**"
+    readme = readme.replace(heading, f"{heading}  \n{marker}")
 readme_path.write_text(readme, encoding="utf-8", newline="\n")
 
 print(doi)

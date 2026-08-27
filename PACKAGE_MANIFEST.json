@@ -22,9 +22,9 @@
       "sha256": "83ef5c8cdbc3fec4cba74715673f6232badd8da6e0ded1c361e62b8e56c465b8"
     },
     {
-      "bytes": 962,
+      "bytes": 1684,
       "path": ".zenodo.json",
-      "sha256": "b9835b436cad3b65a5e8a49d878d80d711b88585fcca434f0110ef6126108185"
+      "sha256": "9121289e53b079fc41252d3293c29fa8a7132cb4ac34537fce8abd0535e08e39"
     },
     {
       "bytes": 743,
@@ -32,9 +32,9 @@
       "sha256": "dc6dd4a7024f94876a959fd0c56cd3551869181cad5c3b7d8bb51f4e7398f156"
     },
     {
-      "bytes": 608,
+      "bytes": 594,
       "path": "CITATION.cff",
-      "sha256": "42020205cc216ac1810ef9c5b4a2f08fb0652a51a2d3f993168d3bcdc5d2aa79"
+      "sha256": "8575ee945ee82d55476808d255396bd91b37a4e517661d9e0e2a42f90c669501"
     },
     {
       "bytes": 5116090,
@@ -52,9 +52,9 @@
       "sha256": "414455736538d12dcbf4995c6acf851d59f648970c9c6479955a3c958a8ad158"
     },
     {
-      "bytes": 396,
+      "bytes": 360,
       "path": "GIT_RELEASE_INFO.json",
-      "sha256": "53898674e78ee65ea146a6759e5f4daf9dd3c8baeb66b9206a79ba782aab6f40"
+      "sha256": "7d42de3fb8aded8a7c6fea2913f1d86cc021d2a7ddebd110afc4718130a0cc41"
     },
     {
       "bytes": 123,
@@ -82,19 +82,19 @@
       "sha256": "6643a54a542a9281e4c5b18f9458ddf0f2a95c1651592be2ccdc9a6b6eddbce9"
     },
     {
-      "bytes": 1438,
+      "bytes": 2527,
       "path": "README.md",
-      "sha256": "19af111fd987fe24c9b02a1c2b20983ec9af89a4d27db3a8666a4bae79196c02"
+      "sha256": "7d0573efe95d35d618dceac362994b777c9e74a4a5d15c3a82b7c3c20779efe3"
     },
     {
-      "bytes": 822,
+      "bytes": 730,
       "path": "README_FIRST.md",
-      "sha256": "70d47168139de9499b44196462ca8de51dde9b26c65ba36d0c023cbc4f944f4e"
+      "sha256": "25caea6f96fb8fee66862fddc5af6169820d63f2e2d7a08dfba8c5f1dc93573c"
     },
     {
-      "bytes": 1702,
+      "bytes": 1700,
       "path": "RELEASE_NOTES.md",
-      "sha256": "6536227dac750aeab0fba3792546c828a2d2ba89f5ee5e011e17c8c5c633d0e2"
+      "sha256": "31411558c61d02e88147b68a8db75c1cdec8eba09aea069891380f2f2f60bd47"
     },
     {
       "bytes": 6,
@@ -102,9 +102,9 @@
       "sha256": "d5fdb23a8c78632336fc46295994bcc98cb099d792d2a141f092c879930607de"
     },
     {
-      "bytes": 2178,
+      "bytes": 1773,
       "path": "ZENODO_GIT_RELEASE_GUIDE.md",
-      "sha256": "b6369ed83270de80e8d4bf61828e10a776f8e3c746a111f809b91aac18e1240a"
+      "sha256": "82afd16fe138f2adfea23fc96b455bcc36fc8b359ec97ff5e0845432b9268831"
     },
     {
       "bytes": 163750,
@@ -112,9 +112,9 @@
       "sha256": "790111d333bc343856a593e51ec0c420b9f20194f895d46fbbdd676745e12f79"
     },
     {
-      "bytes": 202,
+      "bytes": 285,
       "path": "citation.bib",
-      "sha256": "63607cca4b96a5b4773fa88262bfb61d72219f075cc9de049b6155dc27ad41af"
+      "sha256": "e37cd212050c1d0644b3a0054f30e17c7aaf0a7c0b85a4fbe361c2946d612453"
     },
     {
       "bytes": 43809,
@@ -147,9 +147,9 @@
       "sha256": "ed0f51e4abdeb009b0943d56b6f3ff11057dc15cf402f6cdb91606fe3b8f77d6"
     },
     {
-      "bytes": 664,
+      "bytes": 673,
       "path": "codemeta.json",
-      "sha256": "4b3967f465cd461af7ccb1633b5e3e2280c0769c3bedbc85adf8e45e151c98c1"
+      "sha256": "bf1d475c8ac0be842755c45d1d9a43e6973cb83aebeaa365bb2c4641dac7e2c4"
     },
     {
       "bytes": 179,
@@ -1907,9 +1907,9 @@
       "sha256": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a"
     },
     {
-      "bytes": 1978,
+      "bytes": 2005,
       "path": "scripts/apply_doi.py",
-      "sha256": "7f362f58b748d3577a964b6f7d4454419927b2f00214189fb7b4f0f6c25cb4dd"
+      "sha256": "c3e2114d1bc9fcc90ae241397833f32a44702566500ad1cc2e28f76454b11074"
     },
     {
       "bytes": 1667,
@@ -1932,9 +1932,9 @@
       "sha256": "9c3a013104cde093fe58c53480d5367dcd25b144a7513d6db983aebd087440f0"
     },
     {
-      "bytes": 7204,
+      "bytes": 7383,
       "path": "scripts/prepare_v8_0_2_metadata.py",
-      "sha256": "230539dbf2e7a72aabab9264f36add075d47bf72bf0fb1abdef22ff7d4849aa0"
+      "sha256": "7196a88e608060e7b8c552d1a0c87e8f87337ccdddd79d81499ee27adefab267"
     },
     {
       "bytes": 6286,
@@ -2837,9 +2837,9 @@
       "sha256": "ae7da600d921b043df33d277d0d2cff146cf4170dee801a74a6a6f55737a18f4"
     },
     {
-      "bytes": 1253,
+      "bytes": 882,
       "path": "zenodo/README.md",
-      "sha256": "85fa0768f1b2689bdafc0010df33e69cea2a394d53fa08314cefa7366d7ac1d6"
+      "sha256": "c661e32687045fc33f22e04a7b5e6c750fbca4235b91ec8b714372f727bea20d"
     },
     {
       "bytes": 1514,
@@ -2937,13 +2937,13 @@
       "sha256": "7bbd0edddf6e4edba4c2c463599a024be39cd697469196a1c55ee5c3e7493636"
     },
     {
-      "bytes": 1280,
+      "bytes": 1749,
       "path": "zenodo/master_record_metadata.json",
-      "sha256": "73d13d858724424cec6cefeb608e92af1c69e81e30b54aee78614ef8df649fb9"
+      "sha256": "da54fe383a8161124cb8f1bd68a6b4efafc2e21f5a4b29f9ec859f145bd28351"
     }
   ],
   "generated_at_utc": "2026-08-27T00:00:00+00:00",
   "package": "Abhijit Singh Zenodo and Git Release",
-  "root_sha256": "ac6680d7448f1139e985c0c813dab27e5cac79b7f9acd9feaad06dd72a1fc38f",
+  "root_sha256": "5d8060a9e9c4aaf78f75ed6da2e3f203a34cf7b3a1f0bec7d298249d27716057",
   "version": "8.0.2"
 }
